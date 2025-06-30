@@ -25,7 +25,7 @@ const StepTwo = ({ selectedRole, setSelectedRole, onNext, onBack }: StepTwoProps
               key={role}
               variant={selectedRole === role ? "default" : "outline"}
               onClick={() => setSelectedRole(role)}
-              className={selectedRole === role ? "bg-gradient-to-r from-purple-600 to-blue-600" : ""}
+              className={selectedRole === role ? "bg-gradient-to-r from-[#CEA358] to-blue-600" : ""}
             >
               {role}
             </Button>
@@ -38,7 +38,7 @@ const StepTwo = ({ selectedRole, setSelectedRole, onNext, onBack }: StepTwoProps
           <Button 
             onClick={onNext}
             disabled={!selectedRole}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
           >
             Continue <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

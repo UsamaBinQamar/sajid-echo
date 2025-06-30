@@ -37,7 +37,7 @@ const Dashboard = () => {
   const focusAreas = ["Boundaries", "Communication", "Authenticity"];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <Header />
 
       <main className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 space-y-6 lg:space-y-8">

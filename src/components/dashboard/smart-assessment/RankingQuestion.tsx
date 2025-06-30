@@ -71,7 +71,7 @@ const RankingQuestion: React.FC<RankingQuestionProps> = ({
             Question {questionIndex + 1} of {totalQuestions}
           </span>
           {question.required && (
-            <span className="text-xs text-red-500">Required</span>
+            <span className="text-xs text-[#8A1503]">Required</span>
           )}
         </div>
         <CardTitle className="text-lg font-medium leading-relaxed">
@@ -101,7 +101,7 @@ const RankingQuestion: React.FC<RankingQuestionProps> = ({
               `}
             >
               <div className="flex items-center space-x-2">
-                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-purple-100 text-purple-600 text-sm font-medium">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-purple-100 text-[#CEA358] text-sm font-medium">
                   {index + 1}
                 </span>
                 <GripVertical className="h-4 w-4 text-gray-400" />
@@ -148,7 +148,7 @@ const RankingQuestion: React.FC<RankingQuestionProps> = ({
           <Button
             onClick={onNext}
             disabled={!canProceed}
-            className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-600"
+            className="flex items-center space-x-2 bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44]"
           >
             <span>{questionIndex === totalQuestions - 1 ? 'Complete' : 'Next'}</span>
             <ChevronRight className="h-4 w-4" />

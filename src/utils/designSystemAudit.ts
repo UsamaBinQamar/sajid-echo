@@ -24,14 +24,14 @@ export const colorTokenMap = {
   'text-purple-300': 'text-primary-variant',
   'text-purple-400': 'text-primary-variant',
   'text-purple-500': 'text-primary',
-  'text-purple-600': 'text-primary',
+  'text-[#CEA358]': 'text-primary',
   'text-purple-700': 'text-primary',
   'text-purple-800': 'text-primary',
   'text-purple-900': 'text-primary',
   'bg-purple-50': 'bg-primary-soft',
   'bg-purple-100': 'bg-primary-soft',
   'bg-purple-500': 'bg-primary',
-  'bg-purple-600': 'bg-primary',
+  'bg-[#CEA358]': 'bg-primary',
   'bg-purple-700': 'bg-primary',
   
   // Blue scale
@@ -55,12 +55,12 @@ export const colorTokenMap = {
   'bg-green-600': 'bg-success',
   
   // Red scale
-  'text-red-500': 'text-destructive',
+  'text-[#8A1503]': 'text-destructive',
   'text-red-600': 'text-destructive',
-  'text-red-700': 'text-destructive',
+  'text-[#8A1503]': 'text-destructive',
   'bg-red-50': 'bg-destructive-soft',
   'bg-red-100': 'bg-destructive-soft',
-  'bg-red-500': 'bg-destructive',
+  'bg-[#8A1503]': 'bg-destructive',
   'bg-red-600': 'bg-destructive',
   
   // Warning scale (updated to burnt orange mapping)
@@ -70,7 +70,7 @@ export const colorTokenMap = {
   'text-amber-500': 'text-warning',
   'text-amber-600': 'text-warning',
   'text-amber-700': 'text-warning',
-  'text-orange-500': 'text-warning',
+  'text-[#8A1503]': 'text-warning',
   'text-orange-600': 'text-warning',
   'bg-yellow-50': 'bg-warning-soft',
   'bg-yellow-100': 'bg-warning-soft',
@@ -82,7 +82,7 @@ export const colorTokenMap = {
   'bg-amber-600': 'bg-warning',
   'bg-orange-50': 'bg-warning-soft',
   'bg-orange-100': 'bg-warning-soft',
-  'bg-orange-500': 'bg-warning',
+  'bg-[#8A1503]': 'bg-warning',
   'bg-orange-600': 'bg-warning',
   
   // Gray scale mappings
@@ -148,12 +148,12 @@ export const shadowTokenMap = {
 };
 
 export const gradientTokenMap = {
-  'bg-gradient-to-r from-purple-600 to-indigo-600': 'bg-gradient-primary',
+  'bg-gradient-to-r from-[#CEA358] to-indigo-600': 'bg-gradient-primary',
   'bg-gradient-to-r from-purple-500 to-blue-500': 'bg-gradient-primary',
   'bg-gradient-to-br from-purple-50 to-indigo-50': 'card-gradient-primary',
   'bg-gradient-to-r from-green-500 to-emerald-500': 'bg-gradient-success',
   'bg-gradient-to-r from-blue-500 to-cyan-500': 'bg-gradient-info',
-  'bg-gradient-to-r from-yellow-500 to-orange-500': 'bg-gradient-warning',
+  'bg-gradient-to-r from-yellow-500 to-[#8A1503]': 'bg-gradient-warning',
 };
 
 // Audit functions

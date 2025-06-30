@@ -38,7 +38,7 @@ const IntelligentCoachingWidget = () => {
   const getToneIcon = (tone: string) => {
     switch (tone) {
       case 'encouraging': return <Heart className="h-4 w-4 text-green-600" />;
-      case 'celebratory': return <Heart className="h-4 w-4 text-purple-600" />;
+      case 'celebratory': return <Heart className="h-4 w-4 text-[#CEA358]" />;
       case 'empathetic': return <Heart className="h-4 w-4 text-blue-600" />;
       default: return <MessageCircle className="h-4 w-4 text-muted-foreground" />;
     }
@@ -46,7 +46,7 @@ const IntelligentCoachingWidget = () => {
 
   const getCoachingTypeColor = (type: string) => {
     switch (type) {
-      case 'motivational': return "bg-green-100 text-green-800";
+      case 'motivational': return "bg-green-100 text-[#37654B]";
       case 'supportive': return "bg-blue-100 text-blue-800";
       case 'instructional': return "bg-purple-100 text-purple-800";
       case 'challenging': return "bg-orange-100 text-orange-800";
@@ -59,13 +59,13 @@ const IntelligentCoachingWidget = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <MessageCircle className="h-5 w-5 mr-2 text-purple-600" />
+            <MessageCircle className="h-5 w-5 mr-2 text-[#CEA358]" />
             Your AI Coach
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-center py-4">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#CEA358]"></div>
           </div>
         </CardContent>
       </Card>
@@ -81,7 +81,7 @@ const IntelligentCoachingWidget = () => {
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center">
-            <MessageCircle className="h-5 w-5 mr-2 text-purple-600" />
+            <MessageCircle className="h-5 w-5 mr-2 text-[#CEA358]" />
             Your AI Coach
           </div>
           <Badge className={getCoachingTypeColor(coaching.coachingType)}>

@@ -11,7 +11,7 @@ const SecureJournalWrapper = ({ children }: SecureJournalWrapperProps) => {
   return (
     <ProtectedRoute>
       <SecurityMonitor />
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
         <Header />
         <div className="container mx-auto px-6 py-8 max-w-5xl">
           <div className="mb-8 bg-card text-card-foreground rounded-xl p-6 shadow-soft">

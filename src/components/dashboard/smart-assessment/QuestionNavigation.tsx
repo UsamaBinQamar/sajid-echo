@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
@@ -11,13 +10,13 @@ interface QuestionNavigationProps {
   onNext: () => void;
 }
 
-const QuestionNavigation = ({ 
-  currentQuestionIndex, 
-  totalQuestions, 
-  canProceed, 
-  loading, 
-  onPrevious, 
-  onNext 
+const QuestionNavigation = ({
+  currentQuestionIndex,
+  totalQuestions,
+  canProceed,
+  loading,
+  onPrevious,
+  onNext,
 }: QuestionNavigationProps) => {
   return (
     <div className="flex items-center justify-between">
@@ -32,7 +31,7 @@ const QuestionNavigation = ({
       <Button
         onClick={onNext}
         disabled={!canProceed || loading}
-        className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+        className="bg-gradient-to-r from-[#8A1503] to-[#0A0A08] hover:from-[#7A1202] hover:to-[#0A0A08] text-white"
       >
         {loading ? (
           "Saving..."

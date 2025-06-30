@@ -10,7 +10,7 @@ const CompletionState = () => {
   return (
     <Card className="border-green-200 bg-gradient-to-br from-green-50 to-emerald-50">
       <CardHeader>
-        <CardTitle className="flex items-center text-green-800">
+        <CardTitle className="flex items-center text-[#37654B]">
           <CheckCircle className="h-6 w-6 mr-2" />
           Assessment Complete!
         </CardTitle>
@@ -18,7 +18,7 @@ const CompletionState = () => {
       <CardContent className="space-y-4">
         <div className="text-center py-4">
           <Sparkles className="h-12 w-12 mx-auto mb-4 text-green-600" />
-          <h3 className="text-lg font-semibold text-green-800 mb-2">
+          <h3 className="text-lg font-semibold text-[#37654B] mb-2">
             Thank you for your thoughtful responses!
           </h3>
           <p className="text-green-700 mb-6">
@@ -46,7 +46,7 @@ const CompletionState = () => {
         </div>
 
         <div className="bg-white/50 rounded-lg p-4 border border-green-200">
-          <h4 className="font-medium text-green-800 mb-2 flex items-center">
+          <h4 className="font-medium text-[#37654B] mb-2 flex items-center">
             <ArrowRight className="h-4 w-4 mr-2" />
             What happens next?
           </h4>

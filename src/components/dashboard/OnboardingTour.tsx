@@ -122,7 +122,7 @@ const OnboardingTour: React.FC<OnboardingTourProps> = ({ onComplete }) => {
                 <div
                   key={index}
                   className={`w-2 h-2 rounded-full ${
-                    index === currentStep ? 'bg-purple-600' : 'bg-gray-300'
+                    index === currentStep ? 'bg-[#CEA358]' : 'bg-gray-300'
                   }`}
                 />
               ))}

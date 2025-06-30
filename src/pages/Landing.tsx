@@ -117,7 +117,7 @@ const Landing = () => {
       title: "AI-Powered Insights",
       description:
         "Get personalized recommendations and deep insights into your leadership patterns with advanced analytics",
-      color: "text-red-800 dark:text-red-400",
+      color: "text-red-800 dark:text-[#8A1503]",
       bg: "bg-red-50 dark:bg-red-950/20",
       gradient:
         "from-red-100 to-red-50 dark:from-red-950/30 dark:to-red-900/20",
@@ -147,7 +147,7 @@ const Landing = () => {
       title: "Adaptive Assessments",
       description:
         "Dynamic leadership assessments that evolve with your growth and learning patterns",
-      color: "text-red-700 dark:text-red-400",
+      color: "text-[#8A1503] dark:text-[#8A1503]",
       bg: "bg-red-50 dark:bg-red-950/20",
       gradient:
         "from-red-100 to-red-50 dark:from-red-950/30 dark:to-red-900/20",
@@ -178,9 +178,9 @@ const Landing = () => {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-orange-25 to-yellow-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-500">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-red-800/10 to-yellow-600/10 dark:from-red-400/20 dark:to-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-red-800/10 to-yellow-600/10 dark:from-[#8A1503]/20 dark:to-yellow-400/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-1/2 -left-40 w-96 h-96 bg-gradient-to-br from-green-700/10 to-yellow-600/10 dark:from-green-400/20 dark:to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute -bottom-40 right-1/3 w-64 h-64 bg-gradient-to-br from-red-800/10 to-green-700/10 dark:from-red-400/20 dark:to-green-400/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute -bottom-40 right-1/3 w-64 h-64 bg-gradient-to-br from-red-800/10 to-green-700/10 dark:from-[#8A1503]/20 dark:to-green-400/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
 
       {/* Header */}
@@ -202,7 +202,7 @@ const Landing = () => {
             </Badge>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-red-800 via-red-700 to-green-700 dark:from-red-400 dark:via-red-300 dark:to-green-400 bg-clip-text text-transparent leading-tight animate-slide-up">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-red-800 via-[#8A1503] to-green-700 dark:from-[#8A1503] dark:via-red-300 dark:to-green-400 bg-clip-text text-transparent leading-tight animate-slide-up">
             Develop Authentic
             <span className="block mt-2">Leadership</span>
           </h1>
@@ -219,7 +219,7 @@ const Landing = () => {
                 window.location.href = "/auth";
               }}
               size="lg"
-              className="bg-gradient-to-r from-red-800 to-red-700 dark:from-red-600 dark:to-red-500 text-white hover:from-red-900 hover:to-red-800 dark:hover:from-red-700 dark:hover:to-red-600 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg"
+              className="bg-gradient-to-r from-red-800 to-[#8A1503] dark:from-red-600 dark:to-[#8A1503] text-white hover:from-red-900 hover:to-red-800 dark:hover:from-[#8A1503] dark:hover:to-red-600 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg"
             >
               <PlayCircle className="w-5 h-5 mr-2" />
               Start Your Journey
@@ -242,9 +242,9 @@ const Landing = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-white to-yellow-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-lg flex items-center justify-center group-hover:shadow-xl transition-shadow duration-300">
-                  <stat.icon className="w-8 h-8 text-red-800 dark:text-red-400" />
+                  <stat.icon className="w-8 h-8 text-red-800 dark:text-[#8A1503]" />
                 </div>
-                <div className="text-3xl md:text-4xl font-bold text-red-800 dark:text-red-400 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-red-800 dark:text-[#8A1503] mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium">
@@ -273,7 +273,7 @@ const Landing = () => {
               <Award className="w-4 h-4 mr-2" />
               Powerful Features
             </Badge>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-red-800 to-green-700 dark:from-red-400 dark:to-green-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-red-800 to-green-700 dark:from-[#8A1503] dark:to-green-400 bg-clip-text text-transparent">
               Tools for Leadership Growth
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -324,7 +324,7 @@ const Landing = () => {
             <Star className="w-4 h-4 mr-2" />
             Customer Stories
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-green-700 to-red-800 dark:from-green-400 dark:to-red-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-green-700 to-red-800 dark:from-green-400 dark:to-[#8A1503] bg-clip-text text-transparent">
             Loved by Leaders Worldwide
           </h2>
 
@@ -372,7 +372,7 @@ const Landing = () => {
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentTestimonial
-                    ? "bg-red-800 dark:bg-red-500 w-8"
+                    ? "bg-red-800 dark:bg-[#8A1503] w-8"
                     : "bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500"
                 }`}
               />
@@ -449,7 +449,7 @@ const Landing = () => {
             </Card>
 
             {/* Pro Plan */}
-            <Card className="border-2 border-red-800 dark:border-red-500 bg-gradient-to-br from-red-50 to-yellow-50 dark:from-red-950/30 dark:to-yellow-950/30 hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-gray-900/50 transition-all duration-300 transform hover:-translate-y-2 relative">
+            <Card className="border-2 border-red-800 dark:border-[#8A1503] bg-gradient-to-br from-red-50 to-yellow-50 dark:from-red-950/30 dark:to-yellow-950/30 hover:shadow-2xl dark:hover:shadow-2xl dark:hover:shadow-gray-900/50 transition-all duration-300 transform hover:-translate-y-2 relative">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <Badge
                   style={{
@@ -465,7 +465,7 @@ const Landing = () => {
                 <CardTitle className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                   Professional
                 </CardTitle>
-                <div className="text-4xl font-bold text-red-800 dark:text-red-400 mb-2">
+                <div className="text-4xl font-bold text-red-800 dark:text-[#8A1503] mb-2">
                   $79
                   <span className="text-lg text-gray-600 dark:text-gray-400">
                     /month
@@ -498,7 +498,7 @@ const Landing = () => {
                     Priority support
                   </li>
                 </ul>
-                <Button className="w-full bg-gradient-to-r from-red-800 to-red-700 dark:from-red-600 dark:to-red-500 text-white hover:from-red-900 hover:to-red-800 dark:hover:from-red-700 dark:hover:to-red-600 shadow-lg">
+                <Button className="w-full bg-gradient-to-r from-red-800 to-[#8A1503] dark:from-red-600 dark:to-[#8A1503] text-white hover:from-red-900 hover:to-red-800 dark:hover:from-[#8A1503] dark:hover:to-red-600 shadow-lg">
                   Start Free Trial
                 </Button>
               </CardContent>
@@ -536,7 +536,7 @@ const Landing = () => {
                     Dedicated support
                   </li>
                 </ul>
-                <Button className="w-full bg-green-700 dark:bg-green-600 text-white hover:bg-green-800 dark:hover:bg-green-700">
+                <Button className="w-full bg-green-700 dark:bg-green-600 text-white hover:bg-[#37654B] dark:hover:bg-green-700">
                   Contact Sales
                 </Button>
               </CardContent>
@@ -546,7 +546,7 @@ const Landing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 px-6 bg-gradient-to-br from-red-800 via-red-700 to-green-700 dark:from-red-900 dark:via-red-800 dark:to-green-800 text-white relative overflow-hidden">
+      <section className="py-20 lg:py-32 px-6 bg-gradient-to-br from-red-800 via-[#8A1503] to-green-700 dark:from-red-900 dark:via-red-800 dark:to-[#37654B] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
@@ -590,7 +590,7 @@ const Landing = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-green-600 dark:from-red-500 dark:to-green-500 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-green-600 dark:from-[#8A1503] dark:to-green-500 rounded-lg flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-xl font-bold"> EchoStrong</span>

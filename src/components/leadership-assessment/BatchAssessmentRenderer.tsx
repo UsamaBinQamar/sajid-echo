@@ -173,7 +173,7 @@ const BatchAssessmentRenderer: React.FC<BatchAssessmentRendererProps> = ({
         
         {response && (
           <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
-            <p className="text-green-800 text-sm">
+            <p className="text-[#37654B] text-sm">
               ✓ Great choice! Remember to follow through on this commitment this week.
             </p>
           </div>

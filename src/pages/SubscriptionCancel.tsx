@@ -12,7 +12,7 @@ const SubscriptionCancel = () => {
       <div className="max-w-2xl mx-auto text-center space-y-8">
         {/* Cancel Header */}
         <div className="space-y-4">
-          <XCircle className="h-16 w-16 text-orange-500 mx-auto" />
+          <XCircle className="h-16 w-16 text-[#8A1503] mx-auto" />
           <h1 className="text-4xl font-bold text-gray-900">
             Subscription Cancelled
           </h1>
@@ -54,7 +54,7 @@ const SubscriptionCancel = () => {
             </p>
             <Button 
               onClick={() => navigate('/subscription')}
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               View Pricing Plans
             </Button>
@@ -74,7 +74,7 @@ const SubscriptionCancel = () => {
             </Button>
             <Button 
               onClick={() => navigate('/subscription')}
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               View Plans Again
             </Button>

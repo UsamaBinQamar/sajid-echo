@@ -155,7 +155,7 @@ const ResponseInput: React.FC<ResponseInputProps> = ({
                 <Button 
                   type="submit"
                   disabled={!currentResponse.trim() || isLoading || isVoiceMode}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   aria-describedby="send-button-help"
                 >
                   {isLoading ? (

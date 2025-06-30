@@ -33,7 +33,7 @@ const AdvancedFeatureToggle = ({ enabled, onToggle }: AdvancedFeatureToggleProps
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center text-sm">
-            <Sparkles className="h-4 w-4 mr-2 text-purple-600" />
+            <Sparkles className="h-4 w-4 mr-2 text-[#CEA358]" />
             Advanced Assessment Features
           </CardTitle>
           <Switch checked={enabled} onCheckedChange={onToggle} />
@@ -44,7 +44,7 @@ const AdvancedFeatureToggle = ({ enabled, onToggle }: AdvancedFeatureToggleProps
           <div className="space-y-3">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-3 p-2 bg-purple-25 rounded-lg">
-                <div className="text-purple-600 mt-0.5">{feature.icon}</div>
+                <div className="text-[#CEA358] mt-0.5">{feature.icon}</div>
                 <div className="flex-1">
                   <div className="font-medium text-sm text-purple-900">{feature.title}</div>
                   <div className="text-xs text-purple-700 mt-1">{feature.description}</div>
@@ -52,7 +52,7 @@ const AdvancedFeatureToggle = ({ enabled, onToggle }: AdvancedFeatureToggleProps
               </div>
             ))}
           </div>
-          <Badge variant="outline" className="mt-3 text-xs text-purple-600 border-purple-200">
+          <Badge variant="outline" className="mt-3 text-xs text-[#CEA358] border-purple-200">
             Beta Feature
           </Badge>
         </CardContent>

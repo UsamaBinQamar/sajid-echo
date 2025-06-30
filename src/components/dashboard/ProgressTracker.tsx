@@ -118,7 +118,7 @@ const ProgressTracker = () => {
   return <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <TrendingUp className="h-5 w-5 text-purple-600" />
+          <TrendingUp className="h-5 w-5 text-[#CEA358]" />
           Weekly Progress
         </CardTitle>
       </CardHeader>
@@ -142,10 +142,10 @@ const ProgressTracker = () => {
         {/* Current Streak */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Calendar className="h-4 w-4 text-orange-500" />
+            <Calendar className="h-4 w-4 text-[#8A1503]" />
             <span className="text-sm">Current Streak</span>
           </div>
-          <Badge variant={stats.currentStreak > 0 ? "default" : "secondary"} className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
+          <Badge variant={stats.currentStreak > 0 ? "default" : "secondary"} className="bg-gradient-to-r from-[#8A1503] to-[#8A1503] text-white">
             {stats.currentStreak} days
           </Badge>
         </div>
@@ -153,11 +153,11 @@ const ProgressTracker = () => {
         {/* Activity Summary */}
         <div className="grid grid-cols-2 gap-3 pt-2 border-t">
           <div className="text-center">
-            <div className="text-lg font-bold text-purple-600">{stats.journalEntries}</div>
+            <div className="text-lg font-bold text-[#CEA358]">{stats.journalEntries}</div>
             <div className="text-xs text-gray-600">Journal Entries</div>
           </div>
           <div className="text-center">
-            <div className="text-lg font-bold text-blue-600">{stats.dialogueSessions}</div>
+            <div className="text-lg font-bold text-[#8A1503]">{stats.dialogueSessions}</div>
             <div className="text-xs text-gray-600">Practice Sessions</div>
           </div>
         </div>

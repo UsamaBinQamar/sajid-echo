@@ -12,7 +12,7 @@ const ProgressIndicator = ({ currentStep, totalSteps }: ProgressIndicatorProps) 
           <div
             key={step}
             className={`w-3 h-3 rounded-full ${
-              step <= currentStep ? "bg-purple-600" : "bg-gray-300"
+              step <= currentStep ? "bg-[#CEA358]" : "bg-gray-300"
             }`}
           />
         ))}

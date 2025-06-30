@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Save } from "lucide-react";
 
@@ -9,16 +8,21 @@ interface JournalActionsProps {
   onCancel: () => void;
 }
 
-const JournalActions = ({ loading, canSave, onSave, onCancel }: JournalActionsProps) => {
+const JournalActions = ({
+  loading,
+  canSave,
+  onSave,
+  onCancel,
+}: JournalActionsProps) => {
   return (
     <div className="flex justify-end space-x-4">
       <Button variant="outline" onClick={onCancel}>
         Cancel
       </Button>
-      <Button 
+      <Button
         onClick={onSave}
         disabled={loading || !canSave}
-        className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+        className="bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44] text-white"
       >
         {loading ? (
           <>Saving...</>

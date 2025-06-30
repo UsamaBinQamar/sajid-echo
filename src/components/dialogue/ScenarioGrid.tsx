@@ -25,7 +25,7 @@ interface ScenarioGridProps {
 const ScenarioGrid: React.FC<ScenarioGridProps> = ({ scenarios, onStartScenario }) => {
   const getDifficultyLabel = (level: number) => {
     switch (level) {
-      case 1: return { label: 'Beginner', color: 'bg-green-100 text-green-800' };
+      case 1: return { label: 'Beginner', color: 'bg-green-100 text-[#37654B]' };
       case 2: return { label: 'Intermediate', color: 'bg-yellow-100 text-yellow-800' };
       case 3: return { label: 'Advanced', color: 'bg-red-100 text-red-800' };
       default: return { label: 'Unknown', color: 'bg-gray-100 text-gray-800' };
@@ -93,7 +93,7 @@ const ScenarioGrid: React.FC<ScenarioGridProps> = ({ scenarios, onStartScenario 
                 </div>
                 <Button 
                   onClick={() => onStartScenario(scenario.id)}
-                  className="bg-purple-600 hover:bg-purple-700"
+                  className="bg-[#CEA358] hover:bg-purple-700"
                 >
                   <Play className="h-4 w-4 mr-1" />
                   Start

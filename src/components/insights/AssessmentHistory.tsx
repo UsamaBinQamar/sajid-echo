@@ -113,7 +113,7 @@ const AssessmentHistory = () => {
   };
 
   const getScoreColor = (score: number) => {
-    if (score >= 4) return "bg-green-100 text-green-800";
+    if (score >= 4) return "bg-green-100 text-[#37654B]";
     if (score >= 3) return "bg-yellow-100 text-yellow-800";
     return "bg-red-100 text-red-800";
   };
@@ -141,7 +141,7 @@ const AssessmentHistory = () => {
     return (
       <Card>
         <CardContent className="flex items-center justify-center py-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
         </CardContent>
       </Card>
     );
@@ -153,7 +153,7 @@ const AssessmentHistory = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Filter className="h-5 w-5 mr-2 text-purple-600" />
+            <Filter className="h-5 w-5 mr-2 text-[#CEA358]" />
             Filters
           </CardTitle>
         </CardHeader>
@@ -198,7 +198,7 @@ const AssessmentHistory = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <History className="h-5 w-5 mr-2 text-purple-600" />
+            <History className="h-5 w-5 mr-2 text-[#CEA358]" />
             Assessment History
           </CardTitle>
           <p className="text-sm text-gray-600">

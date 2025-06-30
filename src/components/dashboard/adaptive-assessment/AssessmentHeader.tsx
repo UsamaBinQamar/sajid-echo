@@ -23,7 +23,7 @@ const AssessmentHeader = ({
           {quickMode ? (
             <Zap className="h-5 w-5 mr-2 text-yellow-500" />
           ) : (
-            <Brain className="h-5 w-5 mr-2 text-purple-600" />
+            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
           )}
           {quickMode ? "Quick Check-in" : "Smart Assessment"}
           {useAdvancedFeatures && !quickMode && (

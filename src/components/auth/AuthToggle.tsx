@@ -12,7 +12,7 @@ const AuthToggle = ({ isSignUp, setIsSignUp, loading }: AuthToggleProps) => {
         type="button"
         onClick={() => setIsSignUp(!isSignUp)}
         disabled={loading}
-        className="text-purple-600 hover:text-purple-700 underline disabled:opacity-50"
+        className="text-[#CEA358] hover:text-purple-700 underline disabled:opacity-50"
       >
         {isSignUp 
           ? "Already have an account? Sign in" 

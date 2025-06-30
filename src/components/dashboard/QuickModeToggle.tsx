@@ -29,7 +29,7 @@ const QuickModeToggle = ({ quickMode, onToggle }: QuickModeToggleProps) => {
             onClick={() => handleModeChange(true)}
             className={`h-20 flex-col space-y-2 ${
               quickMode
-                ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                ? "bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
                 : "hover:bg-purple-50"
             }`}
           >
@@ -45,7 +45,7 @@ const QuickModeToggle = ({ quickMode, onToggle }: QuickModeToggleProps) => {
             onClick={() => handleModeChange(false)}
             className={`h-20 flex-col space-y-2 ${
               !quickMode
-                ? "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                ? "bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
                 : "hover:bg-purple-50"
             }`}
           >

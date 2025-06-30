@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Lock, Crown, Zap } from "lucide-react";
@@ -13,11 +12,11 @@ interface FeatureGateProps {
   requiredTier?: string;
 }
 
-const FeatureGate = ({ 
-  feature, 
-  children, 
+const FeatureGate = ({
+  feature,
+  children,
   fallback,
-  requiredTier = "Premium" 
+  requiredTier = "Premium",
 }: FeatureGateProps) => {
   const [hasAccess, setHasAccess] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -29,7 +28,7 @@ const FeatureGate = ({
         const access = await subscriptionService.canAccessFeature(feature);
         setHasAccess(access);
       } catch (error) {
-        console.error('Error checking feature access:', error);
+        console.error("Error checking feature access:", error);
         setHasAccess(false);
       } finally {
         setLoading(false);
@@ -59,30 +58,30 @@ const FeatureGate = ({
   }
 
   return (
-    <Card className="border-2 border-dashed border-gray-300 bg-gradient-to-br from-purple-50 to-blue-50">
+    <Card className="border-2 border-dashed border-gray-300 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-black dark:text-white dark:to-gray-900">
       <CardHeader className="text-center">
         <div className="flex items-center justify-center mb-2">
           <div className="p-3 bg-purple-100 rounded-full">
             {requiredTier === "Professional" ? (
-              <Crown className="h-6 w-6 text-purple-600" />
+              <Crown className="h-6 w-6 text-[#CEA358]" />
             ) : requiredTier === "Enterprise" ? (
               <Zap className="h-6 w-6 text-blue-600" />
             ) : (
-              <Lock className="h-6 w-6 text-gray-600" />
+              <Lock className="h-6 w-6 text-gray-600 dark:text-white" />
             )}
           </div>
         </div>
-        <CardTitle className="text-xl text-gray-700">
+        <CardTitle className="text-xl text-gray-700 dark:text-white">
           {requiredTier} Feature
         </CardTitle>
       </CardHeader>
       <CardContent className="text-center space-y-4">
-        <p className="text-gray-600">
+        <p className="text-gray-600 dark:text-white">
           Unlock this premium feature with a {requiredTier} subscription
         </p>
-        <Button 
-          onClick={() => navigate('/subscription')}
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+        <Button
+          onClick={() => navigate("/subscription")}
+          className="text-white bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44] transition-colors duration-300"
         >
           Upgrade to {requiredTier}
         </Button>

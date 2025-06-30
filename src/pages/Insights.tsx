@@ -96,17 +96,17 @@ const Insights = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:bg-black dark:bg-none flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading insights...</p>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358] mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-white">Loading insights...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:bg-gray-900 dark:bg-none dark:text-white transition-colors duration-300">
       <Header />
       
       <div className="container mx-auto px-4 py-8">
@@ -121,8 +121,8 @@ const Insights = () => {
           </Button>
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">Your Growth Insights</h1>
-              <p className="text-gray-600">Track your progress and get personalized recommendations</p>
+              <h1 className="text-3xl font-bold text-gray-800 mb-2 dark:text-white">Your Growth Insights</h1>
+              <p className="text-gray-600 dark:text-white">Track your progress and get personalized recommendations</p>
             </div>
             <ExportButton />
           </div>
@@ -182,9 +182,9 @@ const Insights = () => {
               <UnifiedInsightsCard mode="live-only" showHeader={false} />
             ) : (
               <div className="text-center py-12">
-                <Lock className="h-16 w-16 mx-auto mb-4 text-gray-400" />
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">Live Insights Locked</h3>
-                <p className="text-gray-600 mb-6">
+                <Lock className="h-16 w-16 mx-auto mb-4 text-gray-400 dark:text-white" />
+                <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-2">Live Insights Locked</h3>
+                <p className="text-gray-600 dark:text-white mb-6">
                   Complete your first wellness check-in to unlock real-time insights about your wellbeing.
                 </p>
                 <Button onClick={() => navigate("/dashboard")}>

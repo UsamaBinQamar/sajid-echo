@@ -58,7 +58,7 @@ const SubscriptionStatus = () => {
 
   return (
     <Card className="dark:bg-gray-900">
-      <CardHeader className="pb-3 bg-red-700 dark:bg-red-600">
+      <CardHeader className="pb-3 bg-[#8A1503] dark:bg-[#8A1503]">
         <CardTitle className="flex items-center text-white text-lg">
           {isPremium ? (
             <Crown className="h-5 w-5 mr-2 text-yellow-300" />
@@ -80,14 +80,14 @@ const SubscriptionStatus = () => {
                 ? "border-yellow-500 text-yellow-900 bg-yellow-200 dark:text-yellow-300 dark:bg-yellow-900/20 dark:border-yellow-400"
                 : isTeam
                 ? "border-green-500 text-green-900 bg-green-200 dark:text-green-300 dark:bg-green-900/20 dark:border-green-400"
-                : "border-red-500 text-red-900 bg-red-200 dark:text-red-300 dark:bg-red-900/10 dark:border-red-300"
+                : "border-[#8A1503] text-red-900 bg-red-200 dark:text-red-300 dark:bg-red-900/10 dark:border-red-300"
             }`}
           >
             {subscription.subscription_tier_name}
           </Badge>
           <p className="text-sm text-gray-800 dark:text-gray-400 mt-3 font-medium">
             Status:{" "}
-            <span className="font-bold text-green-800 dark:text-green-400 bg-green-100 dark:bg-green-900/20 px-2 py-1 rounded">
+            <span className="font-bold text-[#CEA358] dark:text-[#CEA358] bg-green-100 dark:bg-green-900/20 px-2 py-1 rounded">
               {subscription.subscription_status}
             </span>
           </p>
@@ -101,7 +101,7 @@ const SubscriptionStatus = () => {
             <Button
               size="sm"
               onClick={() => handleNavigate("/subscription")}
-              className="w-full bg-red-700 dark:bg-red-600 text-white hover:bg-red-800 dark:hover:bg-red-700 shadow-md hover:shadow-lg transition-all duration-300"
+              className="w-full bg-[#8A1503] dark:bg-[#8A1503] text-white hover:bg-red-800 dark:hover:bg-[#8A1503] shadow-md hover:shadow-lg transition-all duration-300"
             >
               <ArrowUpRight className="h-4 w-4 mr-2" />
               Upgrade Now

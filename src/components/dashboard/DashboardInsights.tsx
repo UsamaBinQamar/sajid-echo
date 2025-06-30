@@ -8,10 +8,10 @@ interface DashboardInsightsProps {
 
 const DashboardInsights = ({ onNavigate }: DashboardInsightsProps) => {
   return (
-    <Card className="border border-gray-200 dark:border-gray-800 bg-[var(--landing-yellow-light)] dark:bg-gray-900 rounded-2xl shadow-lg">
+    <Card className="border border-gray-200 dark:border-gray-800 bg-[#CEA358] dark:bg-gray-900 rounded-2xl shadow-lg">
       <CardHeader>
         <CardTitle className="flex items-center text-gray-900 dark:text-white text-xl font-bold">
-          <Brain className="h-6 w-6 mr-3 text-accent" />
+          <Brain className="h-6 w-6 mr-3 text-[#8A1503]" />
           Today's Leadership Insights
         </CardTitle>
       </CardHeader>

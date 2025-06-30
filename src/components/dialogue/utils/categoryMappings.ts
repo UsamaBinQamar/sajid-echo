@@ -28,7 +28,7 @@ export const categoryMappings: Record<string, CategoryInfo> = {
   'team_dynamics': {
     label: 'Team Dynamics',
     description: 'Building effective teams and managing relationships',
-    color: 'bg-green-100 text-green-800 border-green-200',
+    color: 'bg-green-100 text-[#37654B] border-green-200',
     icon: '👥'
   },
   'inclusive_leadership': {
@@ -115,7 +115,7 @@ export const getComplexityInfo = (scenario: any) => {
 export const getDurationCategory = (minutes: number) => {
   if (minutes <= 10) return { label: 'Quick Practice', color: 'text-green-600', icon: '⚡' };
   if (minutes <= 20) return { label: 'Standard Session', color: 'text-blue-600', icon: '🎯' };
-  return { label: 'Deep Dive', color: 'text-purple-600', icon: '🔍' };
+  return { label: 'Deep Dive', color: 'text-[#CEA358]', icon: '🔍' };
 };
 
 export const commonSearchTerms = [

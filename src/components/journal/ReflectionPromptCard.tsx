@@ -23,10 +23,10 @@ const ReflectionPromptCard = ({ onUsePrompt, onDismiss }: ReflectionPromptCardPr
   };
 
   return (
-    <Card className="border-purple-200 bg-gradient-to-r from-purple-50 to-blue-50">
+    <Card className="border-purple-200 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-black dark:to-gray-900">
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
-          <CardTitle className="flex items-center text-purple-700 text-lg">
+          <CardTitle className="flex items-center text-[#8A1503] text-lg">
             <Lightbulb className="h-5 w-5 mr-2 text-yellow-500" />
             Leadership Reflection Prompt
           </CardTitle>
@@ -37,10 +37,10 @@ const ReflectionPromptCard = ({ onUsePrompt, onDismiss }: ReflectionPromptCardPr
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-white p-4 rounded-lg border border-purple-100">
-          <p className="text-purple-800 italic text-lg leading-relaxed">
+          <p className="text-[#CEA358] italic text-lg leading-relaxed">
             "{currentPrompt.text}"
           </p>
-          <p className="text-sm text-purple-600 mt-2 font-medium">
+          <p className="text-sm text-[#8A1503] mt-2 font-medium">
             {currentPrompt.category}
           </p>
         </div>
@@ -57,7 +57,7 @@ const ReflectionPromptCard = ({ onUsePrompt, onDismiss }: ReflectionPromptCardPr
           </Button>
           <Button 
             onClick={handleUsePrompt}
-            className="bg-purple-600 hover:bg-purple-700"
+            className="bg-[#8A1503] text-white"
             size="sm"
           >
             Use This Prompt

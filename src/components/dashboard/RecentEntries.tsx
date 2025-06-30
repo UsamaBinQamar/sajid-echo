@@ -67,6 +67,7 @@ const RecentEntries = () => {
               onClick={() => navigate("/journal")}
               size="sm"
               variant="default"
+              className="text-white"
             >
               <Plus className="h-4 w-4 mr-2" />
               Write First Entry

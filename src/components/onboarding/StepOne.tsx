@@ -17,7 +17,7 @@ const StepOne = ({ pronouns, setPronouns, preferredName, setPreferredName, onNex
   return (
     <Card className="w-full max-w-2xl">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+        <CardTitle className="text-2xl bg-gradient-to-r from-[#CEA358] to-blue-600 bg-clip-text text-transparent">
           Welcome to Your Journey
         </CardTitle>
         <p className="text-gray-600">Let's personalize your EchoStrong experience</p>
@@ -49,7 +49,7 @@ const StepOne = ({ pronouns, setPronouns, preferredName, setPreferredName, onNex
         <div className="text-center">
           <Button 
             onClick={onNext}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
           >
             Continue <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

@@ -24,7 +24,7 @@ const getIconComponent = (iconName: string) => {
   
   switch (iconName) {
     case 'smile':
-      return <Smile {...iconProps} className="h-5 w-5 text-purple-600" />;
+      return <Smile {...iconProps} className="h-5 w-5 text-[#CEA358]" />;
     case 'zap':
       return <Zap {...iconProps} className="h-5 w-5 text-orange-600" />;
     case 'battery':
@@ -106,7 +106,7 @@ const AssessmentQuestion = ({
             </span>
           </div>
           {question.required && (
-            <span className="text-xs text-red-500">Required</span>
+            <span className="text-xs text-[#8A1503]">Required</span>
           )}
         </div>
         <CardTitle className="text-lg font-medium leading-relaxed">
@@ -125,7 +125,7 @@ const AssessmentQuestion = ({
                 p-3 sm:p-4 text-2xl sm:text-3xl rounded-full border-2 transition-all duration-200
                 hover:scale-110 hover:shadow-md
                 ${response === index + 1 
-                  ? 'border-purple-500 bg-purple-50 shadow-lg scale-105' 
+                  ? 'border-[#CEA358] bg-purple-50 shadow-lg scale-105' 
                   : 'border-gray-200 hover:border-purple-300'
                 }
               `}
@@ -157,7 +157,7 @@ const AssessmentQuestion = ({
           <Button
             onClick={onNext}
             disabled={!canProceed}
-            className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-600"
+            className="flex items-center space-x-2 text-white bg-gradient-to-r from-[#8A1503] to-[#0A0A08] hover:from-[#7A1202] hover:to-[#B88D44]"
           >
             <span>{questionIndex === totalQuestions - 1 ? 'Complete' : 'Next'}</span>
             <ChevronRight className="h-4 w-4" />

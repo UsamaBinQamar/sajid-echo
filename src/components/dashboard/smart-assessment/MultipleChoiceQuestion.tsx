@@ -55,7 +55,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
             Question {questionIndex + 1} of {totalQuestions}
           </span>
           {question.required && (
-            <span className="text-xs text-red-500">Required</span>
+            <span className="text-xs text-[#8A1503]">Required</span>
           )}
         </div>
         <CardTitle className="text-lg font-medium leading-relaxed">
@@ -76,7 +76,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
               className={`
                 p-4 rounded-lg border-2 cursor-pointer transition-all duration-200
                 ${isSelected(option)
-                  ? 'border-purple-500 bg-purple-50 shadow-lg'
+                  ? 'border-[#CEA358] bg-purple-50 shadow-lg'
                   : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
                 }
               `}
@@ -95,7 +95,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
                   <div className={`
                     w-4 h-4 rounded-full border-2 transition-all
                     ${isSelected(option)
-                      ? 'border-purple-500 bg-purple-500'
+                      ? 'border-[#CEA358] bg-[#CEA358]'
                       : 'border-gray-300'
                     }
                   `}>
@@ -125,7 +125,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
           <Button
             onClick={onNext}
             disabled={!canProceed}
-            className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-600"
+            className="flex items-center space-x-2 bg-gradient-to-r from-[#8A1503] to-[#0A0A08] hover:from-[#7A1202] hover:to-[#0A0A08]"
           >
             <span>{questionIndex === totalQuestions - 1 ? 'Complete' : 'Next'}</span>
             <ChevronRight className="h-4 w-4" />

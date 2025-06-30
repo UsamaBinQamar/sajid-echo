@@ -32,7 +32,7 @@ const PersonalizationInsights = () => {
         {[1, 2, 3].map((i) => (
           <Card key={i}>
             <CardContent className="flex items-center justify-center py-8">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
             </CardContent>
           </Card>
         ))}
@@ -60,13 +60,13 @@ const PersonalizationInsights = () => {
           <CardTitle className="flex items-center justify-between">
             <div className="flex items-center">
               {insightLevel === 'trends' ? (
-                <Brain className="h-5 w-5 mr-2 text-purple-600" />
+                <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
               ) : (
                 <TrendingUp className="h-5 w-5 mr-2 text-blue-600" />
               )}
               {insightLevel === 'trends' ? 'AI-Powered Trend Analysis' : 'Pattern Recognition'}
             </div>
-            <Badge variant="outline" className={insightLevel === 'trends' ? 'text-purple-600 border-purple-600' : 'text-blue-600 border-blue-600'}>
+            <Badge variant="outline" className={insightLevel === 'trends' ? 'text-[#CEA358] border-[#CEA358]' : 'text-blue-600 border-blue-600'}>
               {daysActive} days of data
             </Badge>
           </CardTitle>

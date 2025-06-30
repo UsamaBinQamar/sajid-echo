@@ -52,7 +52,7 @@ const PredictiveInsightsWidget = () => {
       if (severity === 'medium') return "bg-orange-50 border-orange-200 text-orange-800";
       return "bg-yellow-50 border-yellow-200 text-yellow-800";
     }
-    if (type === 'improvement') return "bg-green-50 border-green-200 text-green-800";
+    if (type === 'improvement') return "bg-green-50 border-green-200 text-[#37654B]";
     return "bg-blue-50 border-blue-200 text-blue-800";
   };
 
@@ -60,7 +60,7 @@ const PredictiveInsightsWidget = () => {
     switch (risk) {
       case 'high': return "bg-red-100 text-red-800";
       case 'medium': return "bg-orange-100 text-orange-800";
-      default: return "bg-green-100 text-green-800";
+      default: return "bg-green-100 text-[#37654B]";
     }
   };
 
@@ -69,13 +69,13 @@ const PredictiveInsightsWidget = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-purple-600" />
+            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
             AI Predictions
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-center py-4">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#CEA358]"></div>
           </div>
         </CardContent>
       </Card>
@@ -92,7 +92,7 @@ const PredictiveInsightsWidget = () => {
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-purple-600" />
+            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
             AI Predictions
           </div>
           <Button 

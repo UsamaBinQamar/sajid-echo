@@ -39,13 +39,13 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
       <CardHeader>
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center space-x-2">
-            <Target className="h-5 w-5 text-purple-600" />
+            <Target className="h-5 w-5 text-[#CEA358]" />
             <span className="text-sm text-muted-foreground">
               Question {questionIndex + 1} of {totalQuestions}
             </span>
           </div>
           {question.required && (
-            <span className="text-xs text-red-500">Required</span>
+            <span className="text-xs text-[#8A1503]">Required</span>
           )}
         </div>
         <CardTitle className="text-lg font-medium leading-relaxed">
@@ -65,7 +65,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
                 p-4 rounded-lg border-2 cursor-pointer transition-all duration-200
                 hover:shadow-md
                 ${isSelected(commitment)
-                  ? 'border-purple-500 bg-purple-50 shadow-lg'
+                  ? 'border-[#CEA358] bg-purple-50 shadow-lg'
                   : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
                 }
               `}
@@ -75,7 +75,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
                 <div className={`
                   w-5 h-5 rounded-full border-2 mt-0.5 transition-all flex items-center justify-center
                   ${isSelected(commitment)
-                    ? 'border-purple-500 bg-purple-500'
+                    ? 'border-[#CEA358] bg-[#CEA358]'
                     : 'border-gray-300'
                   }
                 `}>
@@ -97,7 +97,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
           <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
             <div className="flex items-center space-x-2">
               <Target className="h-4 w-4 text-green-600" />
-              <span className="text-sm font-medium text-green-800">
+              <span className="text-sm font-medium text-[#37654B]">
                 Your commitment: {response}
               </span>
             </div>
@@ -122,7 +122,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
           <Button
             onClick={onNext}
             disabled={!canProceed}
-            className="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-600"
+            className="flex items-center space-x-2 bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44]"
           >
             <span>{questionIndex === totalQuestions - 1 ? 'Complete' : 'Next'}</span>
             <ChevronRight className="h-4 w-4" />

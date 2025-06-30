@@ -50,7 +50,7 @@ const CategoryPerformance = ({ categoryData }: CategoryPerformanceProps) => {
 
   const getTrendColor = (trend: string) => {
     switch (trend) {
-      case "improving": return "bg-green-100 text-green-800";
+      case "improving": return "bg-green-100 text-[#37654B]";
       case "declining": return "bg-red-100 text-red-800";
       default: return "bg-gray-100 text-gray-800";
     }
@@ -60,7 +60,7 @@ const CategoryPerformance = ({ categoryData }: CategoryPerformanceProps) => {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center">
-          <Target className="h-5 w-5 mr-2 text-purple-600" />
+          <Target className="h-5 w-5 mr-2 text-[#CEA358]" />
           Category Performance
         </CardTitle>
       </CardHeader>

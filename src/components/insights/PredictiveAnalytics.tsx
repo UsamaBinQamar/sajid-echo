@@ -62,7 +62,7 @@ const PredictiveAnalytics = () => {
       if (severity === 'medium') return "bg-orange-100 text-orange-800 border-orange-200";
       return "bg-yellow-100 text-yellow-800 border-yellow-200";
     }
-    if (type === 'improvement') return "bg-green-100 text-green-800 border-green-200";
+    if (type === 'improvement') return "bg-green-100 text-[#37654B] border-green-200";
     return "bg-blue-100 text-blue-800 border-blue-200";
   };
 
@@ -70,7 +70,7 @@ const PredictiveAnalytics = () => {
     switch (risk) {
       case 'high': return "bg-red-100 text-red-800 border-red-300";
       case 'medium': return "bg-orange-100 text-orange-800 border-orange-300";
-      default: return "bg-green-100 text-green-800 border-green-300";
+      default: return "bg-green-100 text-[#37654B] border-green-300";
     }
   };
 
@@ -87,13 +87,13 @@ const PredictiveAnalytics = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-purple-600" />
+            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
             Predictive Analytics
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
           </div>
         </CardContent>
       </Card>
@@ -123,8 +123,8 @@ const PredictiveAnalytics = () => {
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div 
                   className={`h-2 rounded-full transition-all duration-300 ${
-                    burnoutRisk.risk === 'high' ? 'bg-red-500' :
-                    burnoutRisk.risk === 'medium' ? 'bg-orange-500' : 'bg-green-500'
+                    burnoutRisk.risk === 'high' ? 'bg-[#8A1503]' :
+                    burnoutRisk.risk === 'medium' ? 'bg-[#8A1503]' : 'bg-green-500'
                   }`}
                   style={{ width: `${Math.min(burnoutRisk.score * 10, 100)}%` }}
                 ></div>
@@ -136,7 +136,7 @@ const PredictiveAnalytics = () => {
                   <ul className="text-sm text-gray-600 space-y-1">
                     {burnoutRisk.factors.map((factor: string, index: number) => (
                       <li key={index} className="flex items-center space-x-2">
-                        <span className="w-1 h-1 bg-red-500 rounded-full"></span>
+                        <span className="w-1 h-1 bg-[#8A1503] rounded-full"></span>
                         <span>{factor}</span>
                       </li>
                     ))}
@@ -196,7 +196,7 @@ const PredictiveAnalytics = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-purple-600" />
+            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
             AI-Powered Insights
           </CardTitle>
           <p className="text-sm text-gray-600">

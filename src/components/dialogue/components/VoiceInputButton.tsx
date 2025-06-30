@@ -69,7 +69,7 @@ const VoiceInputButton: React.FC<VoiceInputButtonProps> = ({
       disabled={isProcessing || hasPermission === false}
       className={`${
         isRecording 
-          ? "bg-red-50 border-red-200 text-red-700 hover:bg-red-100 focus-visible:ring-red-500" 
+          ? "bg-red-50 border-red-200 text-[#8A1503] hover:bg-red-100 focus-visible:ring-[#8A1503]" 
           : "hover:bg-gray-50 focus-visible:ring-primary"
       } transition-colors`}
       aria-label={getButtonText()}

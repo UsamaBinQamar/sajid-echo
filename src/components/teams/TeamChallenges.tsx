@@ -94,7 +94,7 @@ const TeamChallenges = ({ organization }: TeamChallengesProps) => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "active": return "bg-green-100 text-green-800";
+      case "active": return "bg-green-100 text-[#37654B]";
       case "upcoming": return "bg-blue-100 text-blue-800";
       case "completed": return "bg-gray-100 text-gray-800";
       default: return "bg-gray-100 text-gray-800";
@@ -109,7 +109,7 @@ const TeamChallenges = ({ organization }: TeamChallengesProps) => {
           <h2 className="text-2xl font-bold text-gray-800">Team Challenges</h2>
           <p className="text-gray-600">Collaborate on wellness goals with your team</p>
         </div>
-        <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+        <Button className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700">
           <Plus className="h-4 w-4 mr-2" />
           Create Challenge
         </Button>
@@ -125,7 +125,7 @@ const TeamChallenges = ({ organization }: TeamChallengesProps) => {
               <p className="text-gray-600 text-center mb-4">
                 Create the first team challenge to get everyone engaged in wellness activities.
               </p>
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+              <Button className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700">
                 <Plus className="h-4 w-4 mr-2" />
                 Create First Challenge
               </Button>
@@ -138,7 +138,7 @@ const TeamChallenges = ({ organization }: TeamChallengesProps) => {
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
                     <CardTitle className="flex items-center gap-2">
-                      <Target className="h-5 w-5 text-purple-600" />
+                      <Target className="h-5 w-5 text-[#CEA358]" />
                       {challenge.title}
                     </CardTitle>
                     <p className="text-gray-600 mt-1">{challenge.description}</p>
@@ -183,13 +183,13 @@ const TeamChallenges = ({ organization }: TeamChallengesProps) => {
                     <Button 
                       onClick={() => joinChallenge(challenge.id)}
                       size="sm"
-                      className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                      className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
                     >
                       Join Challenge
                     </Button>
                   )}
                   {userParticipation.includes(challenge.id) && (
-                    <Badge className="bg-green-100 text-green-800">
+                    <Badge className="bg-green-100 text-[#37654B]">
                       Participating
                     </Badge>
                   )}

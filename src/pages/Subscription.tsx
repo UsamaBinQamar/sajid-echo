@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import SubscriptionCard from "@/components/subscription/SubscriptionCard";
 import CurrentSubscriptionCard from "@/components/subscription/CurrentSubscriptionCard";
@@ -13,16 +12,20 @@ import { useToast } from "@/components/ui/use-toast";
 import type { SubscriptionTier } from "@/services/subscription/subscriptionService";
 
 const Subscription = () => {
-  const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
+    "monthly"
+  );
   const [refreshing, setRefreshing] = useState(false);
-  const { tiers, userSubscription, loading, loadSubscriptionData } = useSubscriptionData();
-  const { handleSelectTier, handleManageSubscription, refreshSubscription } = useSubscriptionActions(loadSubscriptionData);
+  const { tiers, userSubscription, loading, loadSubscriptionData } =
+    useSubscriptionData();
+  const { handleSelectTier, handleManageSubscription, refreshSubscription } =
+    useSubscriptionActions(loadSubscriptionData);
   const { toast } = useToast();
 
   // Auto-refresh on page load to catch recent subscription changes
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('refresh') === 'true') {
+    if (urlParams.get("refresh") === "true") {
       handleRefreshStatus();
     }
   }, []);
@@ -39,7 +42,7 @@ const Subscription = () => {
       toast({
         title: "Error",
         description: "Failed to refresh subscription status",
-        variant: "destructive"
+        variant: "destructive",
       });
     } finally {
       setRefreshing(false);
@@ -48,50 +51,57 @@ const Subscription = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="w-full px-4 py-8 dark:bg-gray-900">
         <div className="flex items-center justify-center min-h-screen">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#CEA358]"></div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 space-y-8">
+    <div className="min-h-screen w-ful bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300 py-12">
       {/* Header */}
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-900">
-          Choose Your Leadership Journey
-        </h1>
-        <p className="text-xl text-gray-600">
-          Select the perfect plan to enhance your leadership development and growth
-        </p>
-        
-        {/* Refresh Button */}
-        <div className="flex justify-center">
-          <Button
-            variant="outline"
-            onClick={handleRefreshStatus}
-            disabled={refreshing}
-            className="text-sm"
-          >
-            <RefreshCw className={`h-4 w-4 mr-2 ${refreshing ? 'animate-spin' : ''}`} />
-            {refreshing ? 'Checking Status...' : 'Refresh Status'}
-          </Button>
+      <div className="container mx-auto px-4 text-center space-y-4">
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+            Choose Your Leadership Journey
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-400">
+            Select the perfect plan to enhance your leadership development and
+            growth
+          </p>
+
+          {/* Refresh Button */}
+          <div className="flex justify-center">
+            <Button
+              variant="outline"
+              onClick={handleRefreshStatus}
+              disabled={refreshing}
+              className="text-sm"
+            >
+              <RefreshCw
+                className={`h-4 w-4 mr-2 ${refreshing ? "animate-spin" : ""}`}
+              />
+              {refreshing ? "Checking Status..." : "Refresh Status"}
+            </Button>
+          </div>
         </div>
       </div>
 
       {/* Current Subscription Status */}
-      {userSubscription && (
-        <CurrentSubscriptionCard 
-          userSubscription={userSubscription}
-          onManageSubscription={handleManageSubscription}
-          onRefreshSubscription={handleRefreshStatus}
-        />
-      )}
+      <div className="container mx-auto">
+        {userSubscription && (
+          <CurrentSubscriptionCard
+            userSubscription={userSubscription}
+            onManageSubscription={handleManageSubscription}
+            onRefreshSubscription={handleRefreshStatus}
+          />
+        )}
+      </div>
 
       {/* Billing Cycle Toggle */}
-      <BillingCycleToggle 
+      <BillingCycleToggle
         billingCycle={billingCycle}
         onBillingCycleChange={setBillingCycle}
       />
@@ -102,8 +112,10 @@ const Subscription = () => {
           <SubscriptionCard
             key={tier.id}
             tier={tier}
-            isCurrentTier={userSubscription?.subscription_tier_name === tier.name}
-            isPopular={tier.slug === 'premium'}
+            isCurrentTier={
+              userSubscription?.subscription_tier_name === tier.name
+            }
+            isPopular={tier.slug === "premium"}
             onSelectTier={handleSelectTier}
             billingCycle={billingCycle}
           />

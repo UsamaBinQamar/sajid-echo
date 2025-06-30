@@ -13,7 +13,7 @@ const JournalHeader = ({ isVoiceMode, onModeChange }: JournalHeaderProps) => {
     <CardHeader>
       <div className="flex justify-between items-center">
         <CardTitle className="flex items-center">
-          <PenTool className="h-5 w-5 mr-2 text-purple-600" />
+          <PenTool className="h-5 w-5 mr-2 text-[#CEA358]" />
           New Journal Entry
         </CardTitle>
         <div className="flex space-x-2">
@@ -21,6 +21,7 @@ const JournalHeader = ({ isVoiceMode, onModeChange }: JournalHeaderProps) => {
             variant={!isVoiceMode ? "default" : "outline"}
             size="sm"
             onClick={() => onModeChange(false)}
+            className="text-white"
           >
             <PenTool className="h-4 w-4 mr-2" />
             Text

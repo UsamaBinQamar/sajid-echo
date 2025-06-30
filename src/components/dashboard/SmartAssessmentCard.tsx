@@ -52,7 +52,7 @@ const SmartAssessmentCard = () => {
 
         <Button 
           onClick={() => navigate('/insights')}
-          className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+          className="w-full bg-gradient-to-r from-blue-600 to-[#CEA358] hover:from-blue-700 hover:to-purple-700"
         >
           View Your Insights
         </Button>

@@ -125,7 +125,7 @@ const AssessmentPreferences = () => {
     return (
       <Card>
         <CardContent className="flex items-center justify-center py-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
         </CardContent>
       </Card>
     );
@@ -143,7 +143,7 @@ const AssessmentPreferences = () => {
         {/* Focus Areas Selection */}
         <div className="space-y-4">
           <div className="flex items-center space-x-2">
-            <Target className="h-4 w-4 text-purple-600" />
+            <Target className="h-4 w-4 text-[#CEA358]" />
             <Label className="font-semibold">Focus Areas</Label>
             <Badge variant="outline">{preferences.focus_areas.length} selected</Badge>
           </div>
@@ -164,7 +164,7 @@ const AssessmentPreferences = () => {
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-medium text-sm">{area.label}</span>
                   {preferences.focus_areas.includes(area.id) && (
-                    <CheckCircle className="h-4 w-4 text-purple-600" />
+                    <CheckCircle className="h-4 w-4 text-[#CEA358]" />
                   )}
                 </div>
                 <p className="text-xs text-gray-600">{area.description}</p>

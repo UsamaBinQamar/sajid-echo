@@ -48,7 +48,7 @@ const Auth = () => {
     <div
       className="min-h-screen flex items-center justify-center p-4"
       style={{
-        background: "var(--landing-yellow)",
+        background: "#CEA358",
         color: "var(--landing-text)",
       }}
     >

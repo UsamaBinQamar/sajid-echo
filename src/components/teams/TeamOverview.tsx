@@ -129,7 +129,7 @@ const TeamOverview = ({ organization }: TeamOverviewProps) => {
                   {deptMembers.map((member: any) => (
                     <div key={member.id} className="flex items-center space-x-3 p-2 bg-gray-50 rounded">
                       <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                        <span className="text-purple-600 font-medium text-sm">
+                        <span className="text-[#CEA358] font-medium text-sm">
                           {member.profiles?.full_name?.charAt(0) || "U"}
                         </span>
                       </div>
@@ -155,7 +155,7 @@ const TeamOverview = ({ organization }: TeamOverviewProps) => {
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+            <Button className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700">
               <UserPlus className="h-4 w-4 mr-2" />
               Invite Team Members
             </Button>

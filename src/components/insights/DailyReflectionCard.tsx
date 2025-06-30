@@ -20,7 +20,7 @@ const DailyReflectionCard: React.FC<DailyReflectionCardProps> = ({
 
   const getToneColor = (tone: DailyReflection['emotionalTone']) => {
     switch (tone) {
-      case 'breakthrough': return 'bg-green-100 text-green-800 border-green-300';
+      case 'breakthrough': return 'bg-green-100 text-[#37654B] border-green-300';
       case 'growth': return 'bg-blue-100 text-blue-800 border-blue-300';
       case 'steady': return 'bg-purple-100 text-purple-800 border-purple-300';
       case 'challenging': return 'bg-orange-100 text-orange-800 border-orange-300';

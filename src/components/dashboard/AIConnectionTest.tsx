@@ -76,7 +76,7 @@ const AIConnectionTest = () => {
         {result && (
           <div className={`p-3 rounded-lg border ${
             result.success 
-              ? 'bg-green-50 border-green-200 text-green-800' 
+              ? 'bg-green-50 border-green-200 text-[#37654B]' 
               : 'bg-red-50 border-red-200 text-red-800'
           }`}>
             <div className="flex items-center space-x-2 mb-2">

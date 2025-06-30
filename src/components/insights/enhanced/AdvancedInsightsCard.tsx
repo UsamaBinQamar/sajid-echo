@@ -40,7 +40,7 @@ const AdvancedInsightsCard = ({
     switch (priority) {
       case 'high': return 'bg-red-100 text-red-800 border-red-200';
       case 'medium': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
-      case 'low': return 'bg-green-100 text-green-800 border-green-200';
+      case 'low': return 'bg-green-100 text-[#37654B] border-green-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
@@ -50,10 +50,10 @@ const AdvancedInsightsCard = ({
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center">
-            <IconComponent className="h-5 w-5 mr-2 text-purple-600" />
+            <IconComponent className="h-5 w-5 mr-2 text-[#CEA358]" />
             {title}
           </div>
-          <Badge variant="outline" className="text-purple-600 border-purple-600">
+          <Badge variant="outline" className="text-[#CEA358] border-[#CEA358]">
             {insights.length} insights
           </Badge>
         </CardTitle>

@@ -161,7 +161,7 @@ const AuthForm = ({ isSignUp, loading, setLoading }: AuthFormProps) => {
 
       <Button
         type="submit"
-        className="w-full bg-gradient-to-r from-red-800 to-red-700 hover:from-red-900 hover:to-red-800 text-white shadow-lg"
+        className="w-full bg-gradient-to-r from-red-800 to-[#8A1503] hover:from-red-900 hover:to-red-800 text-white shadow-lg"
         disabled={loading}
       >
         {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}

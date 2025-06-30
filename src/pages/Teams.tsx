@@ -89,7 +89,7 @@ const Teams = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div className="flex items-center">
-                        <Icon className="h-6 w-6 text-purple-600 mr-3" />
+                        <Icon className="h-6 w-6 text-[#CEA358] mr-3" />
                         <CardTitle className="text-lg">{feature.title}</CardTitle>
                       </div>
                       <span className="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">
@@ -109,7 +109,7 @@ const Teams = () => {
           </div>
 
           {/* Current Focus */}
-          <Card className="bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+          <Card className="bg-gradient-to-r from-[#CEA358] to-blue-600 text-white">
             <CardHeader>
               <CardTitle className="text-xl">Focus on Individual Leadership</CardTitle>
             </CardHeader>
@@ -134,7 +134,7 @@ const Teams = () => {
               <Button 
                 variant="secondary" 
                 onClick={() => navigate("/dashboard")}
-                className="bg-white text-purple-600 hover:bg-gray-100"
+                className="bg-white text-[#CEA358] hover:bg-gray-100"
               >
                 Continue Your Leadership Journey
               </Button>

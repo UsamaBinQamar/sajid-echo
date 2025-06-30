@@ -31,19 +31,19 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({
         <nav className="hidden md:flex space-x-8 items-center">
           <a
             href="#features"
-            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-red-400 transition-colors font-medium"
+            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-[#8A1503] transition-colors font-medium"
           >
             Features
           </a>
           <a
             href="#pricing"
-            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-red-400 transition-colors font-medium"
+            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-[#8A1503] transition-colors font-medium"
           >
             Pricing
           </a>
           <a
             href="#testimonials"
-            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-red-400 transition-colors font-medium"
+            className="text-gray-700 dark:text-gray-300 hover:text-red-800 dark:hover:text-[#8A1503] transition-colors font-medium"
           >
             Reviews
           </a>
@@ -61,7 +61,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({
           </Button>
         </nav>
         <Button
-          className="bg-gradient-to-r from-red-800 to-red-700 dark:from-red-600 dark:to-red-500 text-white hover:from-red-900 hover:to-red-800 dark:hover:from-red-700 dark:hover:to-red-600 shadow-lg transition-all duration-300"
+          className="bg-gradient-to-r from-red-800 to-[#8A1503] dark:from-red-600 dark:to-[#8A1503] text-white hover:from-red-900 hover:to-red-800 dark:hover:from-[#8A1503] dark:hover:to-red-600 shadow-lg transition-all duration-300"
           onClick={() => {
             window.location.href = "/auth";
           }}

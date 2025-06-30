@@ -143,7 +143,7 @@ const WorkLifeBalanceCheckIn = () => {
                     disabled={loading}
                     className={`text-2xl h-12 w-12 p-0 ${
                       isSelected 
-                        ? "bg-gradient-to-r from-purple-600 to-blue-600" 
+                        ? "bg-gradient-to-r from-[#CEA358] to-blue-600" 
                         : "hover:bg-accent"
                     }`}
                   >
@@ -156,7 +156,7 @@ const WorkLifeBalanceCheckIn = () => {
         ))}
         <Button 
           onClick={handleSubmit} 
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+          className="w-full bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
           disabled={loading}
         >
           {loading ? "Saving..." : "Submit Check-In"}

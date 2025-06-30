@@ -82,7 +82,7 @@ const ScenarioCard: React.FC<ScenarioCardProps> = ({ scenario, onStartScenario }
         </div>
 
         {scenario.trigger_warnings && scenario.trigger_warnings.length > 0 && (
-          <div className="flex items-center gap-1 text-xs text-orange-400 bg-orange-500/10 border border-orange-500/20 rounded-md px-2 py-1 flex-shrink-0">
+          <div className="flex items-center gap-1 text-xs text-orange-400 bg-[#8A1503]/10 border border-[#8A1503]/20 rounded-md px-2 py-1 flex-shrink-0">
             <AlertTriangle className="h-3 w-3" />
             <span>Content notice</span>
           </div>

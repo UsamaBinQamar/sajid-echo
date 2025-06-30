@@ -117,7 +117,7 @@ const ActivityFeed = () => {
     switch (type) {
       case 'journal': return <BookOpen className="h-4 w-4 text-blue-600" />;
       case 'mood': return <Heart className="h-4 w-4 text-pink-600" />;
-      case 'dialogue': return <MessageCircle className="h-4 w-4 text-purple-600" />;
+      case 'dialogue': return <MessageCircle className="h-4 w-4 text-[#CEA358]" />;
       case 'assessment': return <TrendingUp className="h-4 w-4 text-green-600" />;
     }
   };

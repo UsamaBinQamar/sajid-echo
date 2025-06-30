@@ -56,7 +56,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, onSignOut }) => {
               {displayName.charAt(0).toUpperCase()}
             </span>
             {completeness < 100 && (
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-500 rounded-full border border-white"></div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#8A1503] rounded-full border border-white"></div>
             )}
           </div>
           <div className="hidden md:block text-left">
@@ -74,7 +74,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, onSignOut }) => {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="w-72 bg-green-700 text-white shadow-elevated border border-green-700 rounded-xl p-2"
+        className="w-72 lg:w-80 bg-[#CEA358] text-white shadow-elevated border border-green-700 rounded-xl p-2"
       >
         {/* User Info Header */}
         <div className="px-2 py-3 border-b border-border">
