@@ -1,0 +1,125 @@
+
+/* Design System Utility Extensions */
+
+/* Professional Spacing Utilities */
+.p-professional-xs { padding: 0.5rem; }
+.p-professional-sm { padding: 1rem; }
+.p-professional-md { padding: 1.5rem; }
+.p-professional-lg { padding: 2rem; }
+.p-professional-xl { padding: 3rem; }
+.p-professional-2xl { padding: 4rem; }
+
+.m-professional-xs { margin: 0.5rem; }
+.m-professional-sm { margin: 1rem; }
+.m-professional-md { margin: 1.5rem; }
+.m-professional-lg { margin: 2rem; }
+.m-professional-xl { margin: 3rem; }
+.m-professional-2xl { margin: 4rem; }
+
+.gap-professional-xs { gap: 0.5rem; }
+.gap-professional-sm { gap: 1rem; }
+.gap-professional-md { gap: 1.5rem; }
+.gap-professional-lg { gap: 2rem; }
+.gap-professional-xl { gap: 3rem; }
+
+/* Professional Border Utilities */
+.border-professional { border: 1px solid hsl(var(--border)); }
+.border-professional-2 { border: 2px solid hsl(var(--border)); }
+.rounded-professional { border-radius: var(--radius); }
+.rounded-professional-sm { border-radius: calc(var(--radius) - 4px); }
+.rounded-professional-lg { border-radius: calc(var(--radius) + 4px); }
+
+/* Professional Text Utilities */
+.text-professional-xs { font-size: 0.75rem; line-height: 1.5; }
+.text-professional-sm { font-size: 0.875rem; line-height: 1.5; }
+.text-professional-base { font-size: 1rem; line-height: 1.6; }
+.text-professional-lg { font-size: 1.125rem; line-height: 1.5; }
+.text-professional-xl { font-size: 1.25rem; line-height: 1.4; }
+
+/* Professional Background Utilities */
+.bg-professional-subtle { background-color: hsl(var(--muted) / 0.5); }
+.bg-professional-soft { background-color: hsl(var(--muted) / 0.3); }
+.bg-professional-card { background-color: hsl(var(--card)); }
+
+/* Professional Transition Utilities */
+.transition-professional { transition: all var(--transition-smooth); }
+.transition-professional-fast { transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+.transition-professional-slow { transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* Status Color Utilities */
+.text-status-success { color: hsl(var(--success)); }
+.text-status-warning { color: hsl(var(--warning)); }
+.text-status-error { color: hsl(var(--destructive)); }
+.text-status-info { color: hsl(var(--info)); }
+
+.bg-status-success { background-color: hsl(var(--success)); }
+.bg-status-warning { background-color: hsl(var(--warning)); }
+.bg-status-error { background-color: hsl(var(--destructive)); }
+.bg-status-info { background-color: hsl(var(--info)); }
+
+.bg-status-success-soft { background-color: hsl(var(--success-soft)); }
+.bg-status-warning-soft { background-color: hsl(var(--warning-soft)); }
+.bg-status-error-soft { background-color: hsl(var(--destructive-soft)); }
+.bg-status-info-soft { background-color: hsl(var(--info-soft)); }
+
+/* Border Status Colors */
+.border-status-success { border-color: hsl(var(--success)); }
+.border-status-warning { border-color: hsl(var(--warning)); }
+.border-status-error { border-color: hsl(var(--destructive)); }
+.border-status-info { border-color: hsl(var(--info)); }
+
+/* Icon Color Utilities */
+.text-icon-primary { color: hsl(var(--primary)); }
+.text-icon-accent { color: hsl(var(--accent)); }
+.text-icon-muted { color: hsl(var(--muted-foreground)); }
+.text-icon-success { color: hsl(var(--success)); }
+.text-icon-warning { color: hsl(var(--warning)); }
+.text-icon-error { color: hsl(var(--destructive)); }
+.text-icon-info { color: hsl(var(--info)); }
+
+/* Interactive State Utilities */
+.hover-bg-professional:hover { background-color: hsl(var(--muted) / 0.5); }
+.hover-text-professional:hover { color: hsl(var(--primary)); }
+.focus-ring-professional:focus { 
+  outline: none; 
+  box-shadow: 0 0 0 4px hsl(var(--ring) / 0.2); 
+}
+
+/* Gradient Utility Classes */
+.bg-gradient-primary-to-variant {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-variant)));
+}
+
+.bg-gradient-accent-to-variant {
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-variant)));
+}
+
+.bg-gradient-muted-subtle {
+  background: linear-gradient(135deg, hsl(var(--muted)), hsl(var(--secondary)));
+}
+
+/* Professional Component Patterns */
+.card-gradient-primary {
+  background: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--primary) / 0.05));
+  border: 1px solid hsl(var(--primary) / 0.2);
+}
+
+.card-gradient-accent {
+  background: linear-gradient(135deg, hsl(var(--accent-soft)), hsl(var(--accent) / 0.05));
+  border: 1px solid hsl(var(--accent) / 0.2);
+}
+
+.card-gradient-info {
+  background: linear-gradient(135deg, hsl(var(--info-soft)), hsl(var(--info) / 0.05));
+  border: 1px solid hsl(var(--info) / 0.2);
+}
+
+.card-gradient-warning {
+  background: linear-gradient(135deg, hsl(var(--warning-soft)), hsl(var(--warning) / 0.05));
+  border: 1px solid hsl(var(--warning) / 0.2);
+}
+
+.card-gradient-success {
+  background: linear-gradient(135deg, hsl(var(--success-soft)), hsl(var(--success) / 0.05));
+  border: 1px solid hsl(var(--success) / 0.2);
+}
