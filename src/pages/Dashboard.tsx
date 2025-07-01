@@ -20,7 +20,7 @@ const Dashboard = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background dark:bg-gray-900">
         <Header showBreadcrumbs={false} />
         <PageLoader variant="dashboard" title="Loading your dashboard..." />
       </div>
