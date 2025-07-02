@@ -16,7 +16,7 @@ const ProgressAnalytics = () => {
         {[1, 2, 3].map((i) => (
           <Card key={i}>
             <CardContent className="flex items-center justify-center py-8">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012]"></div>
             </CardContent>
           </Card>
         ))}

@@ -27,7 +27,7 @@ const StepThree = ({ selectedFocusAreas, toggleFocusArea, onNext, onBack }: Step
               variant={selectedFocusAreas.includes(area) ? "default" : "outline"}
               className={`cursor-pointer p-3 text-center justify-center ${
                 selectedFocusAreas.includes(area) 
-                  ? "bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700" 
+                  ? "bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700" 
                   : "hover:bg-gray-100"
               }`}
               onClick={() => toggleFocusArea(area)}
@@ -43,7 +43,7 @@ const StepThree = ({ selectedFocusAreas, toggleFocusArea, onNext, onBack }: Step
           <Button 
             onClick={onNext}
             disabled={selectedFocusAreas.length === 0}
-            className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
           >
             Continue <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

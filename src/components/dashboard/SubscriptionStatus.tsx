@@ -87,7 +87,7 @@ const SubscriptionStatus = () => {
           </Badge>
           <p className="text-sm text-gray-800 dark:text-gray-400 mt-3 font-medium">
             Status:{" "}
-            <span className="font-bold text-[#CEA358] dark:text-[#CEA358] bg-green-100 dark:bg-green-900/20 px-2 py-1 rounded">
+            <span className="font-bold text-[#f3c012] dark:text-[#f3c012] bg-green-100 dark:bg-green-900/20 px-2 py-1 rounded">
               {subscription.subscription_status}
             </span>
           </p>

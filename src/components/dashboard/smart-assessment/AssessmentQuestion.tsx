@@ -24,7 +24,7 @@ const getIconComponent = (iconName: string) => {
   
   switch (iconName) {
     case 'smile':
-      return <Smile {...iconProps} className="h-5 w-5 text-[#CEA358]" />;
+      return <Smile {...iconProps} className="h-5 w-5 text-[#f3c012]" />;
     case 'zap':
       return <Zap {...iconProps} className="h-5 w-5 text-orange-600" />;
     case 'battery':
@@ -125,7 +125,7 @@ const AssessmentQuestion = ({
                 p-3 sm:p-4 text-2xl sm:text-3xl rounded-full border-2 transition-all duration-200
                 hover:scale-110 hover:shadow-md
                 ${response === index + 1 
-                  ? 'border-[#CEA358] bg-purple-50 shadow-lg scale-105' 
+                  ? 'border-[#f3c012] bg-purple-50 shadow-lg scale-105' 
                   : 'border-gray-200 hover:border-purple-300'
                 }
               `}

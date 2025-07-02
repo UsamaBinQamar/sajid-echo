@@ -22,7 +22,7 @@ const JournalActions = ({
       <Button
         onClick={onSave}
         disabled={loading || !canSave}
-        className="bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44] text-white"
+        className="bg-gradient-to-r from-[#8A1503] to-[#f3c012] hover:from-[#7A1202] hover:to-[#B88D44] text-white"
       >
         {loading ? (
           <>Saving...</>

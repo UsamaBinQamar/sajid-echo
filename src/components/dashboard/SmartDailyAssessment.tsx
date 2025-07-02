@@ -59,7 +59,7 @@ const SmartDailyAssessment = ({
     return (
       <Card
         data-tour="mood-checkin"
-        className="border border-gray-200 dark:border-gray-800 bg-[#CEA358] dark:bg-gray-900 rounded-2xl shadow-lg"
+        className="border border-gray-200 dark:border-gray-800 bg-[#f3c012] dark:bg-gray-900 rounded-2xl shadow-lg"
       >
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-gray-900 dark:text-white">
@@ -69,7 +69,7 @@ const SmartDailyAssessment = ({
         </CardHeader>
         <CardContent className="space-y-6 text-gray-900 dark:text-white">
           <div className="text-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012] mx-auto mb-4"></div>
             <p className="text-white/80 dark:text-white/80">
               Preparing your personalized assessment...
             </p>
@@ -92,7 +92,7 @@ const SmartDailyAssessment = ({
   return (
     <Card
       data-tour="mood-checkin"
-      className="border border-gray-200 dark:border-gray-800 bg-[#CEA358] dark:bg-gray-900 rounded-2xl shadow-lg"
+      className="border border-gray-200 dark:border-gray-800 bg-[#f3c012] dark:bg-gray-900 rounded-2xl shadow-lg"
     >
       <CardHeader>
         <div className="flex items-center justify-between">

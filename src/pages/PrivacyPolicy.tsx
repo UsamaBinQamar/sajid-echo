@@ -78,7 +78,7 @@ const PrivacyPolicy = () => {
                 Questions? Email us at{" "}
                 <a 
                   href="mailto:hello@echostrong.app" 
-                  className="text-[#CEA358] hover:text-purple-700 underline"
+                  className="text-[#f3c012] hover:text-purple-700 underline"
                 >
                   hello@echostrong.app
                 </a>

@@ -311,7 +311,7 @@ const ImmediateInsights = () => {
       case 'achievement': return <CheckCircle className="h-4 w-4 text-green-600" />;
       case 'suggestion': return <AlertCircle className="h-4 w-4 text-amber-600" />;
       case 'trend': return <TrendingUp className="h-4 w-4 text-blue-600" />;
-      default: return <Zap className="h-4 w-4 text-[#CEA358]" />;
+      default: return <Zap className="h-4 w-4 text-[#f3c012]" />;
     }
   };
 
@@ -329,14 +329,14 @@ const ImmediateInsights = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Activity className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Activity className="h-5 w-5 mr-2 text-[#f3c012]" />
             Live Insights
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
             <div className="flex items-center justify-center py-4">
-              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#CEA358]"></div>
+              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#f3c012]"></div>
               <span className="ml-2 text-sm text-muted-foreground">Analyzing your latest data...</span>
             </div>
             <LoadingSkeleton variant="list" lines={3} />
@@ -352,7 +352,7 @@ const ImmediateInsights = () => {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center">
-              <Activity className="h-5 w-5 mr-2 text-[#CEA358]" />
+              <Activity className="h-5 w-5 mr-2 text-[#f3c012]" />
               Live Insights
             </CardTitle>
             <div className="flex items-center space-x-2">
@@ -381,7 +381,7 @@ const ImmediateInsights = () => {
               <p className="text-gray-600 mb-6">
                 Complete an assessment or daily check-in to see personalized insights appear here in real-time.
               </p>
-              <Button onClick={() => navigate("/dashboard")} className="bg-gradient-to-r from-[#CEA358] to-blue-600">
+              <Button onClick={() => navigate("/dashboard")} className="bg-gradient-to-r from-[#f3c012] to-blue-600">
                 Start Assessment
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Button>

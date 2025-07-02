@@ -141,7 +141,7 @@ const AssessmentHistory = () => {
     return (
       <Card>
         <CardContent className="flex items-center justify-center py-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012]"></div>
         </CardContent>
       </Card>
     );
@@ -153,7 +153,7 @@ const AssessmentHistory = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Filter className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Filter className="h-5 w-5 mr-2 text-[#f3c012]" />
             Filters
           </CardTitle>
         </CardHeader>
@@ -198,7 +198,7 @@ const AssessmentHistory = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <History className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <History className="h-5 w-5 mr-2 text-[#f3c012]" />
             Assessment History
           </CardTitle>
           <p className="text-sm text-gray-600">

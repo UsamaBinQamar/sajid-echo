@@ -10,7 +10,7 @@ const AIInsightsSection = () => {
     <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-indigo-50">
       <CardHeader>
         <CardTitle className="flex items-center">
-          <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
+          <Brain className="h-5 w-5 mr-2 text-[#f3c012]" />
           AI-Powered Insights
         </CardTitle>
         <p className="text-sm text-muted-foreground">

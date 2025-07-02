@@ -89,7 +89,7 @@ const VoiceRecordingArea = ({
         className={`h-20 w-20 rounded-full ${
           isRecording 
             ? "bg-[#8A1503] animate-pulse hover:bg-red-600" 
-            : "bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            : "bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
         }`}
       >
         {isProcessing ? (
@@ -129,7 +129,7 @@ const VoiceRecordingArea = ({
             </p>
             <Button 
               onClick={() => navigate('/subscription')}
-              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               <Crown className="h-4 w-4 mr-2" />
               Upgrade Plan

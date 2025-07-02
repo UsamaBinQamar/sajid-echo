@@ -54,7 +54,7 @@ const SubscriptionCancel = () => {
             </p>
             <Button 
               onClick={() => navigate('/subscription')}
-              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               View Pricing Plans
             </Button>
@@ -74,7 +74,7 @@ const SubscriptionCancel = () => {
             </Button>
             <Button 
               onClick={() => navigate('/subscription')}
-              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               View Plans Again
             </Button>

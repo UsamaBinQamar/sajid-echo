@@ -40,7 +40,7 @@ const AssessmentQuestion = ({
   return (
     <div className="space-y-4 p-4 border rounded-lg">
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-[#CEA358] bg-purple-50 px-2 py-1 rounded-full">
+        <span className="text-xs font-medium text-[#f3c012] bg-purple-50 px-2 py-1 rounded-full">
           {getCategoryName(question.category)}
         </span>
         <div className="flex gap-2">

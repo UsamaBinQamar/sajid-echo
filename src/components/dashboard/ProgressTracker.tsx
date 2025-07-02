@@ -118,7 +118,7 @@ const ProgressTracker = () => {
   return <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <TrendingUp className="h-5 w-5 text-[#CEA358]" />
+          <TrendingUp className="h-5 w-5 text-[#f3c012]" />
           Weekly Progress
         </CardTitle>
       </CardHeader>
@@ -153,7 +153,7 @@ const ProgressTracker = () => {
         {/* Activity Summary */}
         <div className="grid grid-cols-2 gap-3 pt-2 border-t">
           <div className="text-center">
-            <div className="text-lg font-bold text-[#CEA358]">{stats.journalEntries}</div>
+            <div className="text-lg font-bold text-[#f3c012]">{stats.journalEntries}</div>
             <div className="text-xs text-gray-600">Journal Entries</div>
           </div>
           <div className="text-center">

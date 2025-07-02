@@ -24,14 +24,14 @@ export const colorTokenMap = {
   'text-purple-300': 'text-primary-variant',
   'text-purple-400': 'text-primary-variant',
   'text-purple-500': 'text-primary',
-  'text-[#CEA358]': 'text-primary',
+  'text-[#f3c012]': 'text-primary',
   'text-purple-700': 'text-primary',
   'text-purple-800': 'text-primary',
   'text-purple-900': 'text-primary',
   'bg-purple-50': 'bg-primary-soft',
   'bg-purple-100': 'bg-primary-soft',
   'bg-purple-500': 'bg-primary',
-  'bg-[#CEA358]': 'bg-primary',
+  'bg-[#f3c012]': 'bg-primary',
   'bg-purple-700': 'bg-primary',
   
   // Blue scale
@@ -148,7 +148,7 @@ export const shadowTokenMap = {
 };
 
 export const gradientTokenMap = {
-  'bg-gradient-to-r from-[#CEA358] to-indigo-600': 'bg-gradient-primary',
+  'bg-gradient-to-r from-[#f3c012] to-indigo-600': 'bg-gradient-primary',
   'bg-gradient-to-r from-purple-500 to-blue-500': 'bg-gradient-primary',
   'bg-gradient-to-br from-purple-50 to-indigo-50': 'card-gradient-primary',
   'bg-gradient-to-r from-green-500 to-emerald-500': 'bg-gradient-success',

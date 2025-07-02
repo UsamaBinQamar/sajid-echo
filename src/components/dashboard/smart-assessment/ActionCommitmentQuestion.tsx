@@ -39,7 +39,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
       <CardHeader>
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center space-x-2">
-            <Target className="h-5 w-5 text-[#CEA358]" />
+            <Target className="h-5 w-5 text-[#f3c012]" />
             <span className="text-sm text-muted-foreground">
               Question {questionIndex + 1} of {totalQuestions}
             </span>
@@ -65,7 +65,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
                 p-4 rounded-lg border-2 cursor-pointer transition-all duration-200
                 hover:shadow-md
                 ${isSelected(commitment)
-                  ? 'border-[#CEA358] bg-purple-50 shadow-lg'
+                  ? 'border-[#f3c012] bg-purple-50 shadow-lg'
                   : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
                 }
               `}
@@ -75,7 +75,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
                 <div className={`
                   w-5 h-5 rounded-full border-2 mt-0.5 transition-all flex items-center justify-center
                   ${isSelected(commitment)
-                    ? 'border-[#CEA358] bg-[#CEA358]'
+                    ? 'border-[#f3c012] bg-[#f3c012]'
                     : 'border-gray-300'
                   }
                 `}>
@@ -122,7 +122,7 @@ const ActionCommitmentQuestion: React.FC<ActionCommitmentQuestionProps> = ({
           <Button
             onClick={onNext}
             disabled={!canProceed}
-            className="flex items-center space-x-2 bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44]"
+            className="flex items-center space-x-2 bg-gradient-to-r from-[#8A1503] to-[#f3c012] hover:from-[#7A1202] hover:to-[#B88D44]"
           >
             <span>{questionIndex === totalQuestions - 1 ? 'Complete' : 'Next'}</span>
             <ChevronRight className="h-4 w-4" />

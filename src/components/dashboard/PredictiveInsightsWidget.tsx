@@ -69,13 +69,13 @@ const PredictiveInsightsWidget = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Brain className="h-5 w-5 mr-2 text-[#f3c012]" />
             AI Predictions
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-center py-4">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#CEA358]"></div>
+            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#f3c012]"></div>
           </div>
         </CardContent>
       </Card>
@@ -92,7 +92,7 @@ const PredictiveInsightsWidget = () => {
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Brain className="h-5 w-5 mr-2 text-[#f3c012]" />
             AI Predictions
           </div>
           <Button 

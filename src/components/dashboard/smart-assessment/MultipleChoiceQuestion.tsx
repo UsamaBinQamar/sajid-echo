@@ -76,7 +76,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
               className={`
                 p-4 rounded-lg border-2 cursor-pointer transition-all duration-200
                 ${isSelected(option)
-                  ? 'border-[#CEA358] bg-purple-50 shadow-lg'
+                  ? 'border-[#f3c012] bg-purple-50 shadow-lg'
                   : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
                 }
               `}
@@ -95,7 +95,7 @@ const MultipleChoiceQuestion: React.FC<MultipleChoiceQuestionProps> = ({
                   <div className={`
                     w-4 h-4 rounded-full border-2 transition-all
                     ${isSelected(option)
-                      ? 'border-[#CEA358] bg-[#CEA358]'
+                      ? 'border-[#f3c012] bg-[#f3c012]'
                       : 'border-gray-300'
                     }
                   `}>

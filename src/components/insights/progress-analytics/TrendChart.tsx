@@ -24,7 +24,7 @@ const TrendChart = ({ trendChartData }: TrendChartProps) => {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center">
-          <TrendingUp className="h-5 w-5 mr-2 text-[#CEA358]" />
+          <TrendingUp className="h-5 w-5 mr-2 text-[#f3c012]" />
           Daily Progress Trend (Last 14 Days)
         </CardTitle>
       </CardHeader>

@@ -25,7 +25,7 @@ export const addIconsToQuestions = (questions: SmartQuestion[]): QuestionWithIco
         iconComponent = <BarChart3 className="h-4 w-4 text-green-500" />;
         break;
       default:
-        iconComponent = <Brain className="h-4 w-4 text-[#CEA358]" />;
+        iconComponent = <Brain className="h-4 w-4 text-[#f3c012]" />;
     }
     return { ...question, iconComponent };
   });

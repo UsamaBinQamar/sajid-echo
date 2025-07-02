@@ -28,7 +28,7 @@ export const usePricingData = () => {
     {
       name: "Leadership Professional",
       slug: "premium",
-      icon: <Star className="h-6 w-6 text-[#CEA358]" />,
+      icon: <Star className="h-6 w-6 text-[#f3c012]" />,
       price: { monthly: 5, yearly: 200, originalMonthly: 19.99 },
       description: "Advanced features for serious leadership development",
       popular: true,

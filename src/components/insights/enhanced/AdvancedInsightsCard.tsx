@@ -50,10 +50,10 @@ const AdvancedInsightsCard = ({
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center">
-            <IconComponent className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <IconComponent className="h-5 w-5 mr-2 text-[#f3c012]" />
             {title}
           </div>
-          <Badge variant="outline" className="text-[#CEA358] border-[#CEA358]">
+          <Badge variant="outline" className="text-[#f3c012] border-[#f3c012]">
             {insights.length} insights
           </Badge>
         </CardTitle>

@@ -74,7 +74,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, onSignOut }) => {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="w-72 lg:w-80 bg-[#CEA358] text-white shadow-elevated border border-green-700 rounded-xl p-2"
+        className="w-72 lg:w-80 bg-[#f3c012] text-white shadow-elevated border border-green-700 rounded-xl p-2"
       >
         {/* User Info Header */}
         <div className="px-2 py-3 border-b border-border">

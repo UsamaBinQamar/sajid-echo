@@ -91,7 +91,7 @@ const ReflectionPromptRenderer: React.FC<ReflectionPromptRendererProps> = ({
     <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-indigo-50">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <Lightbulb className="h-5 w-5 text-[#CEA358]" />
+          <Lightbulb className="h-5 w-5 text-[#f3c012]" />
           Reflection Time
           <Badge className={getCategoryColor(category)}>
             {category.replace('_', ' ')}
@@ -110,7 +110,7 @@ const ReflectionPromptRenderer: React.FC<ReflectionPromptRendererProps> = ({
             </div>
             <Button
               onClick={onComplete}
-              className="bg-[#CEA358] hover:bg-purple-700 text-white"
+              className="bg-[#f3c012] hover:bg-purple-700 text-white"
             >
               View Your Insights
               <CheckCircle className="h-4 w-4 ml-2" />
@@ -140,7 +140,7 @@ const ReflectionPromptRenderer: React.FC<ReflectionPromptRendererProps> = ({
               <Button
                 onClick={onComplete}
                 disabled={!canComplete() || loading}
-                className="bg-[#CEA358] hover:bg-purple-700 text-white"
+                className="bg-[#f3c012] hover:bg-purple-700 text-white"
               >
                 {loading ? 'Generating Insights...' : 'Complete Reflection'}
                 <CheckCircle className="h-4 w-4 ml-2" />

@@ -36,7 +36,7 @@ const SubscriptionSuccess = () => {
     return (
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-center min-h-screen">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#CEA358]"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#f3c012]"></div>
         </div>
       </div>
     );
@@ -60,12 +60,12 @@ const SubscriptionSuccess = () => {
         <Card className="border-purple-300 bg-purple-50">
           <CardHeader>
             <CardTitle className="flex items-center justify-center">
-              <Crown className="h-5 w-5 mr-2 text-[#CEA358]" />
+              <Crown className="h-5 w-5 mr-2 text-[#f3c012]" />
               Your New Plan
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Badge variant="outline" className="text-[#CEA358] border-purple-300 text-lg px-4 py-2">
+            <Badge variant="outline" className="text-[#f3c012] border-purple-300 text-lg px-4 py-2">
               {subscription?.tier?.name || 'Leadership Professional'}
             </Badge>
             <p className="text-sm text-gray-600">
@@ -122,7 +122,7 @@ const SubscriptionSuccess = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => navigate('/dashboard')}
-              className="bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700"
+              className="bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700"
             >
               <ArrowRight className="h-4 w-4 mr-2" />
               Go to Dashboard

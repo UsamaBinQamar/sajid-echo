@@ -63,7 +63,7 @@ const FeatureGate = ({
         <div className="flex items-center justify-center mb-2">
           <div className="p-3 bg-purple-100 rounded-full">
             {requiredTier === "Professional" ? (
-              <Crown className="h-6 w-6 text-[#CEA358]" />
+              <Crown className="h-6 w-6 text-[#f3c012]" />
             ) : requiredTier === "Enterprise" ? (
               <Zap className="h-6 w-6 text-blue-600" />
             ) : (
@@ -81,7 +81,7 @@ const FeatureGate = ({
         </p>
         <Button
           onClick={() => navigate("/subscription")}
-          className="text-white bg-gradient-to-r from-[#8A1503] to-[#CEA358] hover:from-[#7A1202] hover:to-[#B88D44] transition-colors duration-300"
+          className="text-white bg-gradient-to-r from-[#8A1503] to-[#f3c012] hover:from-[#7A1202] hover:to-[#B88D44] transition-colors duration-300"
         >
           Upgrade to {requiredTier}
         </Button>

@@ -77,7 +77,7 @@ const GoalsAndPreferences = () => {
           {/* Focus Areas Selection */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Target className="h-4 w-4 text-[#CEA358]" />
+              <Target className="h-4 w-4 text-[#f3c012]" />
               <Label className="font-semibold">Focus Areas</Label>
               <Badge variant="outline">{preferences.focus_areas.length} selected</Badge>
             </div>

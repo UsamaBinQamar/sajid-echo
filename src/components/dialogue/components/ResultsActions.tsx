@@ -17,7 +17,7 @@ const ResultsActions: React.FC<ResultsActionsProps> = ({ onReturnToScenarios }) 
         <RotateCcw className="h-4 w-4 mr-2" />
         Try Another Scenario
       </Button>
-      <Button onClick={() => navigate('/dashboard')} className="flex items-center bg-[#CEA358] hover:bg-purple-700">
+      <Button onClick={() => navigate('/dashboard')} className="flex items-center bg-[#f3c012] hover:bg-purple-700">
         <Home className="h-4 w-4 mr-2" />
         Return to Dashboard
       </Button>

@@ -93,7 +93,7 @@ const ScenarioGrid: React.FC<ScenarioGridProps> = ({ scenarios, onStartScenario 
                 </div>
                 <Button 
                   onClick={() => onStartScenario(scenario.id)}
-                  className="bg-[#CEA358] hover:bg-purple-700"
+                  className="bg-[#f3c012] hover:bg-purple-700"
                 >
                   <Play className="h-4 w-4 mr-1" />
                   Start

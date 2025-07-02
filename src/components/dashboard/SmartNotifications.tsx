@@ -99,7 +99,7 @@ const SmartNotifications = () => {
         {insights.filter(i => i.confidence > 0.7).map((insight, index) => (
           <div key={index} className="p-3 rounded-lg border border-border">
             <div className="flex items-center space-x-2 mb-2">
-              <TrendingUp className="h-4 w-4 text-[#CEA358]" />
+              <TrendingUp className="h-4 w-4 text-[#f3c012]" />
               <span className="text-sm font-medium text-foreground">Growth Insight</span>
               <Badge variant="outline" className="text-xs">
                 {Math.round(insight.confidence * 100)}%

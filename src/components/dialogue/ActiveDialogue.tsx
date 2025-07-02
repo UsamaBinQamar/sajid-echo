@@ -216,7 +216,7 @@ const ActiveDialogue: React.FC<ActiveDialogueProps> = ({ session, onComplete, on
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center">
-              <Bot className="h-5 w-5 mr-2 text-[#CEA358]" />
+              <Bot className="h-5 w-5 mr-2 text-[#f3c012]" />
               {scenario.title}
             </CardTitle>
             <div className="flex space-x-2">
@@ -323,7 +323,7 @@ const ActiveDialogue: React.FC<ActiveDialogueProps> = ({ session, onComplete, on
                   <Button 
                     onClick={sendResponse} 
                     disabled={!currentResponse.trim() || isLoading}
-                    className="bg-[#CEA358] hover:bg-purple-700"
+                    className="bg-[#f3c012] hover:bg-purple-700"
                   >
                     <Send className="h-4 w-4 mr-1" />
                     {isLoading ? 'Sending...' : 'Send'}
@@ -340,7 +340,7 @@ const ActiveDialogue: React.FC<ActiveDialogueProps> = ({ session, onComplete, on
           <CardContent className="p-6 text-center">
             <h3 className="text-lg font-semibold mb-2">Dialogue Complete!</h3>
             <p className="text-gray-600 mb-4">You've completed this leadership conversation scenario.</p>
-            <Button onClick={completeDialogue} className="bg-[#CEA358] hover:bg-purple-700">
+            <Button onClick={completeDialogue} className="bg-[#f3c012] hover:bg-purple-700">
               View Results & Assessment
             </Button>
           </CardContent>

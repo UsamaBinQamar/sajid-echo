@@ -60,7 +60,7 @@ const CategoryPerformance = ({ categoryData }: CategoryPerformanceProps) => {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center">
-          <Target className="h-5 w-5 mr-2 text-[#CEA358]" />
+          <Target className="h-5 w-5 mr-2 text-[#f3c012]" />
           Category Performance
         </CardTitle>
       </CardHeader>

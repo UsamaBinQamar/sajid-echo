@@ -19,7 +19,7 @@ const WellnessGoalsCard = () => {
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center">
-            <Target className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Target className="h-5 w-5 mr-2 text-[#f3c012]" />
             Your Wellness Goals
           </CardTitle>
           <div className="flex items-center gap-2">
@@ -35,7 +35,7 @@ const WellnessGoalsCard = () => {
       <CardContent>
         {goalsLoading ? (
           <div className="flex items-center justify-center py-4">
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#CEA358]"></div>
+            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#f3c012]"></div>
           </div>
         ) : goals.length > 0 ? (
           <div className="space-y-3">

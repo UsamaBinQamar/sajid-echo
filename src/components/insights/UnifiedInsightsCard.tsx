@@ -33,7 +33,7 @@ const UnifiedInsightsCard: React.FC<UnifiedInsightsCardProps> = ({
       case 'achievement': return <CheckCircle className="h-4 w-4 text-green-600" />;
       case 'suggestion': return <AlertCircle className="h-4 w-4 text-amber-600" />;
       case 'trend': return <TrendingUp className="h-4 w-4 text-blue-600" />;
-      default: return <Zap className="h-4 w-4 text-[#CEA358]" />;
+      default: return <Zap className="h-4 w-4 text-[#f3c012]" />;
     }
   };
 
@@ -54,7 +54,7 @@ const UnifiedInsightsCard: React.FC<UnifiedInsightsCardProps> = ({
     return (
       <Card className={className}>
         <CardContent className="flex items-center justify-center py-8">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012]"></div>
         </CardContent>
       </Card>
     );
@@ -83,11 +83,11 @@ const UnifiedInsightsCard: React.FC<UnifiedInsightsCardProps> = ({
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             <div className="flex items-center">
-              <Activity className="h-5 w-5 mr-2 text-[#CEA358]" />
+              <Activity className="h-5 w-5 mr-2 text-[#f3c012]" />
               {mode === 'live-only' ? 'Live Insights' : 'Smart Insights Dashboard'}
             </div>
             <div className="flex items-center space-x-2">
-              <Badge variant="outline" className="text-[#CEA358] border-[#CEA358]">
+              <Badge variant="outline" className="text-[#f3c012] border-[#f3c012]">
                 {data.daysActive} days active
               </Badge>
               {lastUpdate && (

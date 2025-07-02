@@ -98,7 +98,7 @@ const Insights = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:bg-black dark:bg-none flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358] mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012] mx-auto mb-4"></div>
           <p className="text-gray-600 dark:text-white">Loading insights...</p>
         </div>
       </div>

@@ -37,7 +37,7 @@ const ReflectionPromptCard = ({ onUsePrompt, onDismiss }: ReflectionPromptCardPr
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-white p-4 rounded-lg border border-purple-100">
-          <p className="text-[#CEA358] italic text-lg leading-relaxed">
+          <p className="text-[#f3c012] italic text-lg leading-relaxed">
             "{currentPrompt.text}"
           </p>
           <p className="text-sm text-[#8A1503] mt-2 font-medium">

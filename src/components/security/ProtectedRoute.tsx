@@ -22,7 +22,7 @@ export const ProtectedRoute = ({
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 dark:bg-black dark:bg-none dark:text-white">
         <Card className="w-96">
           <CardContent className="flex flex-col items-center justify-center p-8">
-            <Loader2 className="h-8 w-8 animate-spin text-[#CEA358] mb-4" />
+            <Loader2 className="h-8 w-8 animate-spin text-[#f3c012] mb-4" />
             <p className="text-gray-600 dark:text-white">Verifying authentication...</p>
           </CardContent>
         </Card>

@@ -115,7 +115,7 @@ export const getComplexityInfo = (scenario: any) => {
 export const getDurationCategory = (minutes: number) => {
   if (minutes <= 10) return { label: 'Quick Practice', color: 'text-green-600', icon: '⚡' };
   if (minutes <= 20) return { label: 'Standard Session', color: 'text-blue-600', icon: '🎯' };
-  return { label: 'Deep Dive', color: 'text-[#CEA358]', icon: '🔍' };
+  return { label: 'Deep Dive', color: 'text-[#f3c012]', icon: '🔍' };
 };
 
 export const commonSearchTerms = [

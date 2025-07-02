@@ -87,13 +87,13 @@ const PredictiveAnalytics = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Brain className="h-5 w-5 mr-2 text-[#f3c012]" />
             Predictive Analytics
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-center py-8">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#CEA358]"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#f3c012]"></div>
           </div>
         </CardContent>
       </Card>
@@ -196,7 +196,7 @@ const PredictiveAnalytics = () => {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center">
-            <Brain className="h-5 w-5 mr-2 text-[#CEA358]" />
+            <Brain className="h-5 w-5 mr-2 text-[#f3c012]" />
             AI-Powered Insights
           </CardTitle>
           <p className="text-sm text-gray-600">

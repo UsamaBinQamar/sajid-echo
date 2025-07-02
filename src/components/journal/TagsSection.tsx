@@ -40,7 +40,7 @@ const TagsSection = ({
             variant={selectedTags.includes(tag) ? "default" : "outline"}
             className={`cursor-pointer ${
               selectedTags.includes(tag) 
-                ? "bg-gradient-to-r from-[#CEA358] to-blue-600" 
+                ? "bg-gradient-to-r from-[#f3c012] to-blue-600" 
                 : "hover:bg-gray-100"
             }`}
             onClick={() => onTagToggle(tag)}

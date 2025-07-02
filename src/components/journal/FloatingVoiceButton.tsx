@@ -62,7 +62,7 @@ const FloatingVoiceButton = ({ onTranscription, isActive = false }: FloatingVoic
           </div>
           <Button
             onClick={() => navigate('/subscription')}
-            className="w-16 h-16 rounded-full shadow-warm transition-all duration-300 hover-lift bg-gradient-to-r from-[#CEA358] to-blue-600 hover:from-purple-700 hover:to-blue-700 text-primary-foreground"
+            className="w-16 h-16 rounded-full shadow-warm transition-all duration-300 hover-lift bg-gradient-to-r from-[#f3c012] to-blue-600 hover:from-purple-700 hover:to-blue-700 text-primary-foreground"
             size="icon"
           >
             <Crown className="h-6 w-6" />
